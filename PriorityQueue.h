@@ -123,7 +123,7 @@ T PriorityQueue<T>::extract() {
         return best;
     }
     else {
-//        printf("error extracting.\n");
+    //    printf("error extracting.\n");
         return T();
     }
 }
@@ -205,43 +205,61 @@ int SRPT(QQjr qu, bool debug)
         Qjr jobs;
         if(qu.size())
         {
-            jobs = qu.front();
+            jobs = qu.front();  // get the earliest releasing jobs
             if (jobs.size()) {
-                if (debug) cout << jobs[0] << endl;
-                if (t == jobs[0].r) {
+                if (debug) cout << "add: " << endl;
+                if (t == jobs[0].r) // if current time matches the release time, push these jobs into pq
+                {
                     qu.pop_front();
                     for (Qjr::iterator it = jobs.begin(); it != jobs.end(); it++) {
-                        pq.push(*it);
+                        pq.push(*it);    
+                        if(debug) cout << *it << endl;                   
                     }
-                }
-                if (debug) {
-                    pq.bst_print();
-                    cout << endl;
                 }
             }
         }
 
-        // pop the leading job from priority queue
-        Jr leading = pq.extract();
-        if(debug) cout << "leading: " << leading << endl;
-
-        // update critical time point
-        crtcl = (qu.size()) ? min(qu.front()[0].r, t + leading.p) : t + leading.p;
-
-        // update vec and heap(if needed)
-        int ci = crtcl;
-        int pi = crtcl - t;
-        int less = leading.p + t - crtcl;
-        if(less)
+        // priority queue inspection
+        if (debug) 
         {
-            pq.push(Jr(leading.idx, less));
+            cout << "pq snapshot: " << endl;
+            pq.bst_print();
+            cout << "extract: " << pq.top() << endl;
+            cout << endl;
         }
-        seq.push_back(seqJ(leading.idx, pi, ci));
+
+        Jr leading;
+        if(pq.size())
+        {
+            // pop the leading job from priority queue
+            leading = pq.extract();
+            // if(debug) cout << "leading: " << leading << endl;
+
+            // update critical time point
+            crtcl = (qu.size()) ? min(qu.front()[0].r, t + leading.p) : t + leading.p;
+
+            // update vec and heap(if needed)
+            int ci = crtcl;
+            int pi = crtcl - t;
+            int less = leading.p + t - crtcl;
+            if(less)
+                pq.push(Jr(leading.idx, less));
+            else
+                seq.push_back(seqJ(leading.idx, pi, ci));
+        }
+        else
+        {
+            // update critical time point
+            if(qu.size())
+                crtcl = qu.front()[0].r;
+        }
+        
+        if(debug) cout << "crtrl: " << crtcl << endl;
 
         // update current time
         t = crtcl;
 
-    }while(pq.size());
+    }while(qu.size() || pq.size());
 
     // after calculation, compute sigma Cj
     int sigmaCj = 0;
@@ -250,10 +268,12 @@ int SRPT(QQjr qu, bool debug)
         sigmaCj += seq[i].ci;
 
         // print for debug
-        // if(debug)
-        // printf("(idx: %d, Pi: %d, Ci: %d), ", seq[i].idx, seq[i].p, seq[i].ci);
+        if(debug)
+        printf("(idx: %d, Pi: %d, Ci: %d), ", seq[i].idx, seq[i].p, seq[i].ci);
     }
-    // printf("\n");
+    if(debug) printf("\n");
+
+    if(debug) cout << "sigmaCj: " << sigmaCj << endl;
     return sigmaCj;
 }
 
