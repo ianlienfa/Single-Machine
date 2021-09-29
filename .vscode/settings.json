@@ -6,6 +6,7 @@
         "**/requirements{/**,*}.{txt,in}": "pip-requirements",
         "bitset": "cpp",
         "iostream": "cpp",
-        "unordered_map": "c"
+        "unordered_map": "c",
+        "list": "c"
     }
 }

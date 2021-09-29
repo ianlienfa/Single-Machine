@@ -10,6 +10,7 @@
 #include <list>
 using namespace std;
 #define SWAP(i, j, tmp){tmp = i; i = j; j = tmp;}
+typedef vector<int> Vi;
 
 struct NodeInfo
 {
@@ -54,6 +55,22 @@ struct Uheap
     // Set functions
     void merge(int i);      // node i in st is being chosen to merge with its parent
     int find_parent(int i); // set instructions, finds the representative of the set
+
+    // additional functions
+    static Vi listToVec(const list<int> &lst)
+    {
+        Vi vec;
+        for(auto it: lst)
+            vec.push_back(it);
+        return vec;
+    }
+    static list<int> vecToList(const Vi &v)
+    {
+        list<int> lst;
+        for(auto it: v)
+            lst.push_back(it);
+        return lst;
+    }
 
     // find seq
     list<int> find_seq()

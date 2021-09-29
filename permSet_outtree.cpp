@@ -70,10 +70,11 @@ public:
     pair<list<int>, double> BFSsolve(Vb prec, Vb child, Vd s, Vd t, bool print);
     pair<list<int>, double> BFSBBsolve(Vb prec, Vb child, Vd s, Vd t, bool print);
     pair<list<int>, double> BFSBBsolve(){return BFSBBsolve(prec, child, s, t, true);};
-    inline QQjr qqjrGen(E &e, bool debug = false){return qqjrGen_0(e, debug);}
+    inline QQjr qqjrGen(E &e, bool debug = false){return qqjrGen_v0(e, debug);}
     QQjr qqjrGen_v0(E &e, bool debug);  // consider sequenced & non_sequenced set up job
     QQjr qqjrGen_v1(E &e, bool debug);  // take released test_job into consideration
     pair<list<int>, double> BFSCBBsolve(Vb prec, Vb child, Vd s, Vd t, bool print);
+    pair<list<int>, double> localSearch(Vb prec, Vb child, Vd s, Vd t, bool print);
 };
 
 void SetAndTestSchedule::inputInit()
@@ -184,14 +185,14 @@ double SetAndTestSchedule::computeSeq(list<int> seq)
         printf("ComputeSeq: seq size error!\n");
     int cum = 0;
     int ans = 0;
-    if(debug) printf("whole seq: ");
+    if(debug) printf("whole seq: \n");
     for(auto i: seq)
     {
         // if(debug) printf("%d, ", i);
         // i is the number in seq, which are job indecies
         cum += (isT(i)) ? t[originidx(i)] : s[i];
         ans += (isT(i)) ? cum : 0;
-        if(debug) printf("i: %d, cum: %d, ans: %d\n", i, cum, ans);
+        if(debug) printf("job idx j: %d, Cj: %d, ans: %d\n", i, cum, ans);
     }
     if(debug) printf("\n");
     return ans;
@@ -857,18 +858,22 @@ pair<list<int>, double> SetAndTestSchedule::BFSCBBsolve(Vb prec, Vb child, Vd s,
     contour.assign(Tn+Sn+1, PriorityQueue<E>([](const E &e1, const E &e2){return e1.lb < e2.lb;}));
     
     // PriorityQueue<E> q([](const E &e1, const E &e2){return e1.lb < e2.lb;});
-    contour[0].push(E(B(0), Vi(), 0));
+    contour[0].push(E(B(0), Vi(), 0));  // dummy job
     
     // incumbent solution init
     long long sz = 1, lv = 0;
-    double min = 0x3FFFFFFF;
+    double min = 14815;    
     list<int> min_seq;
     B levelVisited; levelVisited.set();     // levelvisited = 1111....1111, 用levelvisited來記錄每個contour是否為空
-    B mask(0); mask.flip(); mask >>= (mask.size() - (Tn + Sn+ 1));    // mask用來去掉不合理的level
+    B mask(0); mask.flip(); mask >>= (mask.size() - (Sn+ 1));    // mask用來去掉不合理的level, a dummy level-0 is required
+    cout << mask << endl;
+
+    // param for debug
+    unsigned long long cycle = 0;
 
     while((levelVisited & mask).any())  // if there exists node unvisited...
     {
-        for(int level = 0; level <= Tn+Sn; level++)
+        for(int level = 0; level <= Sn; level++)    // level-0 well only be visit once, since after the dummy element is removed, the size will remain at 0
         {
             if(contour[level].size())
             {
@@ -919,14 +924,38 @@ pair<list<int>, double> SetAndTestSchedule::BFSCBBsolve(Vb prec, Vb child, Vd s,
                         E topush = E((B(e.visited).set(i)), v_in, 0);
                         QQjr job_with_rj = qqjrGen(topush);                    
                         int srpt = SRPT(job_with_rj);
-                        topush.lb = srpt;
-                        if(debug) cout << "topush: " << topush << endl;
-                        contour[level+1].push(topush);                        
+                        topush.lb = srpt;                        
+
+                        // prune, lb如果比現在最好還糟就不要塞了                        
+                        if(topush.lb <= min)
+                        {
+                            if(debug) cout << "topush: " << topush << endl;
+                            contour[level+1].push(topush);      
+                        }                                     
                     }
                 }
             }
             else
             levelVisited.set(level, 0);
+        }        
+        cycle++;
+        
+        // print the best of all contour
+        if(cycle % 10 == 0)
+        {    printf("\n");
+            for(int i = 1; i <= Sn; i++)
+            {
+                if(contour[i].size())            
+                {
+                    printf("cycle: %llu, level: %d, lb: %f, set-up-seq: ", cycle, i, contour[i].top().lb);
+                    for(auto it: contour[i].top().seq)
+                    {
+                        cout << it << " ";
+                    }
+                    cout << endl;
+                }
+            }
+            printf("\n");
         }
     }
 
@@ -939,6 +968,56 @@ pair<list<int>, double> SetAndTestSchedule::BFSCBBsolve(Vb prec, Vb child, Vd s,
 
     return make_pair(min_seq, min);
 }
+
+pair<list<int>, double> SetAndTestSchedule::localSearch(Vb prec, Vb child, Vd s, Vd t, bool print)
+{
+    //init
+    this->s = s;
+    this->t = t;
+    this->prec = prec;
+    this->child = child;
+
+    // init
+    double min = 0x3FFFFFFF;    
+    double lastmin = min;
+    Vi min_seq;    
+    for(int i = 1; i <= Sn; i++)    // 為了確保idx數字對，從1開始
+    {
+        min_seq.push_back(i);
+    }
+
+    while(true)
+    {
+        for(int i = 0; i < Sn; i++) // 為了確保seq在丟進heap計算過程不出問題，從0開始
+        {
+            for(int j = i+1; j < Sn; j++)
+            {   
+                Vi tmp_seq(min_seq);   
+                SWAP(tmp_seq[i], tmp_seq[j]);
+                Uheap hp = toUheap(tmp_seq, prec, child, s, t);                
+                list<int> v = hp.find_seq();
+                double ans = computeSeq(v);
+                if(ans < min)
+                {
+                    if(debug) printf("ans: %.2f, min: %.2f\n", ans, min);
+                    min = ans;
+                    SWAP(min_seq[i], min_seq[j]);
+                    printf("now min: %.1f\n", min);
+                    for(auto it: min_seq)
+                    cout << it << ", " ; cout << endl << endl;
+                }
+            }
+        }
+        if(lastmin == min)
+            break;
+        else
+            lastmin = min;
+    }
+
+    return make_pair(Uheap::vecToList(min_seq), min);
+}
+
+
 
 
 int main()
@@ -991,6 +1070,7 @@ int main()
 
     // st.debug = true; 
     pair<list<int>, double> pp = st.BFSCBBsolve(prec, child, s, t, true);
+    // pair<list<int>, double> pp = st.localSearch(prec, child, s, t, true);
     for(auto it : pp.first) printf("%d, ", it); printf("\n");
 
 }
