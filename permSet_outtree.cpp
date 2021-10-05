@@ -1004,8 +1004,8 @@ int main()
 
 
     // st.debug = true; 
-    pair<list<int>, double> pp = st.BFSCBBsolve(prec, child, s, t, true);
-    // pair<list<int>, double> pp = st.localSearch(prec, child, s, t, true);
+    // pair<list<int>, double> pp = st.BFSCBBsolve(prec, child, s, t, true);
+    pair<list<int>, double> pp = st.localSearch(prec, child, s, t, true);
     for(auto it : pp.first) printf("%d, ", it); printf("\n");
 
 }

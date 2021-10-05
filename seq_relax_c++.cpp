@@ -1,3 +1,30 @@
+/*  ================== seq_relax_c++ =======================
+   
+    - The order of set-up and testjob in general 
+      when mixed is different with that of in permSet_outtree
+    - the permSet_outtree it's (set_up, test_job)
+    - while here it's (test_job, set_up)
+    - so in this code, test_job has smaller index 
+      when using the mixed version index
+    - 這裡使用了兩種indexing方式
+      跟permSet_outtree裡面的indexing剛好相反
+
+    Indecies:
+    There are two kinds of indexing in this code
+    1. unmixed
+        - In this version, set_up and test jobs has their 
+        own indecies, starting from 1 respectively
+
+    2. mixed
+        - In this version, set_up and test jobs are being 
+        seen as one kind and test jobs have smaller indecies 
+        starting from 1
+        - range: 
+            - test job:     1 ~ J
+            - set_up job: J+1 ~ N 
+
+    ==================================================    */
+
 #include <iostream>
 #include <queue>
 #include <fstream>
@@ -99,9 +126,13 @@ const int lambda = 50;
 
 
 // 用child在改的時候比較有效率，因為我們固定的是set-up jobs
-int relax_lb(Vb &child, Vd &s, Vd &t)
+int relax_lb(const Vb &_child, const Vd &_s, const Vd &_t, const Vi &setup_done)
 {    
     /*  == Variables decalration == */
+    Vb child(_child);
+    Vd s(_s);
+    Vd t(_t);    
+
     GRBVar **S;
     GRBVar **C;
     GRBVar **W;
@@ -177,21 +208,40 @@ int relax_lb(Vb &child, Vd &s, Vd &t)
             objExpr += C[m][j];
         }
     }
+    // 用先後順序來列relaxation，不用一定照先後順序 -> 淘汰 -> 太離散
+    // for(int m = 1; m <= M; m++)
+    // {
+    //     for(int j = 1; j <= J; j++)
+    //     {
+    //         for(int r = J+1; r <= N; r++)
+    //         {
+    //             if(child[r-J].test(j))
+    //             {                    
+    //                 string order_constr = "t"+ to_string(j) + "_r" + to_string(r-J)+ "_r_than_j";                    
+    //                 objExpr += (1 - Y[r][j]) * lambda;
+    //                 model.addConstr(Y[r][j] == 1, order_constr);
+    //             }
+    //         }
+    //     }
+    // }
+
+    // 試著讓排他性 relax
     for(int m = 1; m <= M; m++)
     {
-        for(int j = 1; j <= J; j++)
+        for(int i = 1; i <= N; i++)
         {
-            for(int r = J+1; r <= N; r++)
+            for(int j = i+1; j <= N; j++)
             {
-                if(child[r-J].test(j))
-                {                    
-                    string order_constr = "t"+ to_string(j) + "_r" + to_string(r-J)+ "_r_than_j";                    
-                    objExpr += (1 - Y[r][j]) * lambda;
-                    // model.addConstr(Y[r][j] == 1, order_constr);
-                }
+                string ij_constr = "job" + to_string(i) + "_finishes_bf" + "_job" + to_string(j) + "_on_" + to_string(m);
+                string ji_constr = "job" + to_string(j) + "_finishes_bf" + "_job" + to_string(i) + "_on_" + to_string(m);
+                // cout << ji_constr << endl;
+                model.addConstr(-( S[m][j] - C[m][i] + My * ( 1 - Y[i][j] ) + My * ( 1 - W[m][i] ) + My * ( 1 - W[m][j] ) ) <= 0, ij_constr);
+                model.addConstr(S[m][i] - C[m][j] + My * Y[i][j] + My * ( 1 - W[m][i] ) + My * ( 1 - W[m][j] ) >= 0);
             }
         }
-    }
+    } 
+
+
     model.setObjective(objExpr, GRB_MINIMIZE);
 
 
@@ -236,10 +286,19 @@ int relax_lb(Vb &child, Vd &s, Vd &t)
                     string rt_constr = "t"+ to_string(j) + "_r" + to_string(r-J)+ "_dep";
                     string order_constr = "t"+ to_string(j) + "_r" + to_string(r-J)+ "_r_than_j";
                     model.addConstr(( 1 - W[m][j] ) * Mw + ( W[m][r] - 1 ) >= 0, rt_constr);
-                    // model.addConstr(Y[r][j] == 1, order_constr);
+                    model.addConstr(Y[r][j] == 1, order_constr);
                 }
             }
         }
+    }
+
+    // set-up job間 相依性
+    for(int i = 0; i < setup_done.size()-1; i++)
+    {
+        // r_idx = setup_done[i] + J;
+        string order_constr = "r"+ to_string(setup_done[i]) + "_r" + to_string(setup_done[i+1])+ "_r_than_r";
+        cout << order_constr << endl;
+        model.addConstr(Y[setup_done[i] + J][setup_done[i+1] + J] == 1, order_constr);
     }
 
     // 一定要有先後, order_clarity
@@ -265,7 +324,8 @@ int relax_lb(Vb &child, Vd &s, Vd &t)
         }
     }
 
-    // // 排他性, Exclusivity
+    // 排他性, Exclusivity
+    // 不是你先就是我先
     for(int m = 1; m <= M; m++)
     {
         for(int i = 1; i <= N; i++)
@@ -274,11 +334,13 @@ int relax_lb(Vb &child, Vd &s, Vd &t)
             {
                 string ij_constr = "job" + to_string(i) + "_finishes_bf" + "_job" + to_string(j) + "_on_" + to_string(m);
                 string ji_constr = "job" + to_string(j) + "_finishes_bf" + "_job" + to_string(i) + "_on_" + to_string(m);
+                // cout << ji_constr << endl;
                 model.addConstr(S[m][j] - C[m][i] + My * ( 1 - Y[i][j] ) + My * ( 1 - W[m][i] ) + My * ( 1 - W[m][j] ) >= 0, ij_constr);
                 model.addConstr(S[m][i] - C[m][j] + My * Y[i][j] + My * ( 1 - W[m][i] ) + My * ( 1 - W[m][j] ) >= 0);
             }
         }
     } 
+
 
 
     // Optimize model
@@ -350,8 +412,7 @@ int main()
     }
 
     // done test
-    Vi setup_done = {1, 2};    
-    Lb_Compute_Param param = lbComputeParamSetUp(child, s, t, setup_done);
+    Vi setup_done = {12, 21, 15, 28, 5, 16, 27, 11, 20, 23, 30, 17, 29, 3, 24, 14, 7, 26, 1, 18, 6, 2, 13, 9, 22, 4, 19, 8, 25, 10};    
 
-    cout << "optimal: " << relax_lb(param.child, param.s, param.t) << endl;
+    cout << "optimal: " << relax_lb(child, s, t, setup_done) << endl;
 }
