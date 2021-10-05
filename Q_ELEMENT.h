@@ -5,12 +5,17 @@
 #ifndef Q_ELEMENT_H
 #define Q_ELEMENT_H
 
-typedef struct Q_ELEMENT E;
+#include <iostream>
+#include <vector>
+#include <bitset>
+#include <limits>
+#include <list>
+using namespace std;
 typedef vector<int> Vi;
 typedef vector<Vi> VVi;
 typedef bitset<100> B;
 typedef vector<B> Vb;
-typedef deque<Q_ELEMENT> Qe;
+typedef struct Q_ELEMENT E;
 
 struct Q_ELEMENT
 {

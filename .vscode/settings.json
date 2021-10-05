@@ -7,6 +7,7 @@
         "bitset": "cpp",
         "iostream": "cpp",
         "unordered_map": "c",
-        "list": "c"
+        "list": "c",
+        "setandtestschedule.h": "c"
     }
 }

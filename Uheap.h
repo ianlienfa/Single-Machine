@@ -6,11 +6,16 @@
 #define UHEAP_H
 #include <iostream>
 #include <vector>
+#include <bitset>
 #include <limits>
 #include <list>
 using namespace std;
 #define SWAP(i, j, tmp){tmp = i; i = j; j = tmp;}
 typedef vector<int> Vi;
+typedef vector<Vi> VVi;
+typedef bitset<100> B;
+typedef vector<B> Vb;
+typedef vector<double> Vd;
 
 struct NodeInfo
 {
