@@ -1,6 +1,6 @@
-/*  ================== seq_relax_c++ =======================
+/*  ================== seq_c++ =======================
    
-    - This code relax on the precedence constraints
+    - This is the version without relaxing
     - The order of set-up and testjob in general 
       when mixed is different with that of in permSet_outtree
     - the permSet_outtree it's (set_up, test_job)
@@ -67,65 +67,6 @@ const int My = 100000;
 // 解放的constraint不連續，難relax
 const int lambda = 50;
 
-
-// VVi toDependecyMatrix(string s)
-// {
-//     VVi dep_matrix;
-//     ifstream input;
-//     input.open(s);
-//     string str;
-//     bool vec_init = true;
-//     while(std::getline(input, str))
-//     {        
-//         bool i;
-//         int set_up_job_idx = 0;        
-//         if(vec_init)
-//         {
-//             stringstream ss(str);            
-//             while(ss >> i)
-//             {                
-//                 Vi v;
-//                 v.push_back(i);
-//                 dep_matrix.push_back(v);
-//             }
-//             vec_init = false;
-//         }
-//         else
-//         {
-//             stringstream ss(str);
-//             while(ss >> i)
-//             {
-//                 dep_matrix[set_up_job_idx].push_back(i);
-//                 set_up_job_idx++;
-//             }
-//         }
-        
-//     }
-//     input.close();
-
-//     // printf("size: %d * %d\n", dep_matrix.size(), dep_matrix[1].size());
-//     // for(auto it: dep_matrix)
-//     // {
-//     //     for(auto itt: it)
-//     //     {
-//     //         cout << itt << " ";
-//     //     }
-//     //     cout << endl;
-//     // }
-
-//     VVi matrix;    
-//     matrix.assign(dep_matrix.size()+dep_matrix[0].size() + 1, Vi(dep_matrix.size()+dep_matrix[0].size() + 1));
-//     for(int i = 1; i <= 30; i++)
-//     {
-//         for(int j = 31; j <= 60; j++)
-//         {
-//             matrix[i][j] = dep_matrix[i-1][j-31];
-//         }
-//     }
-//     return matrix;
-// }
-
-
 // 用child在改的時候比較有效率，因為我們固定的是set-up jobs
 int relax_lb(const Vb &_child, const Vd &_s, const Vd &_t, const Vi &setup_done)
 {    
@@ -151,7 +92,6 @@ int relax_lb(const Vb &_child, const Vd &_s, const Vd &_t, const Vi &setup_done)
 
     // Create an environment
     GRBEnv env = GRBEnv(true);
-    env.set(GRB_IntParam_OutputFlag, 0);
     env.set("LogFile", "mip1.log");
     env.start();
     
@@ -210,21 +150,7 @@ int relax_lb(const Vb &_child, const Vd &_s, const Vd &_t, const Vi &setup_done)
             objExpr += C[m][j];
         }
     }
-    // 用先後順序來列relaxation，不用一定照先後順序 -> 淘汰 -> 太離散
-    for(int m = 1; m <= M; m++)
-    {
-        for(int j = 1; j <= J; j++)
-        {
-            for(int r = J+1; r <= N; r++)
-            {
-                if(child[r-J].test(j))
-                {                                                         
-                    objExpr += (1 - Y[r][j]) * lambda;                    
-                }
-            }
-        }
-    }
-
+    
 
     model.setObjective(objExpr, GRB_MINIMIZE);
 
@@ -272,7 +198,7 @@ int relax_lb(const Vb &_child, const Vd &_s, const Vd &_t, const Vi &setup_done)
                     model.addConstr(( 1 - W[m][j] ) * Mw + ( W[m][r] - 1 ) >= 0, rt_constr);
 
                     // If Relax
-                    // model.addConstr(Y[r][j] == 1, order_constr);
+                    model.addConstr(Y[r][j] == 1, order_constr);
                 }
             }
         }
@@ -353,7 +279,7 @@ int relax_lb(const Vb &_child, const Vd &_s, const Vd &_t, const Vi &setup_done)
 
     // Optimize model
     model.optimize();    
-    return model.get(GRB_DoubleAttr_ObjBound);
+    return model.get(GRB_DoubleAttr_ObjVal);
 
     } catch(GRBException e) {
         cout << "Error code = " << e.getErrorCode() << endl;

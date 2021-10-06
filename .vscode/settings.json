@@ -8,6 +8,7 @@
         "iostream": "cpp",
         "unordered_map": "c",
         "list": "c",
-        "setandtestschedule.h": "c"
+        "setandtestschedule.h": "c",
+        "new": "cpp"
     }
 }

@@ -70,6 +70,7 @@ public:
     QQjr qqjrGen_v1(E &e, bool debug);  // take released test_job into consideration
     pair<list<int>, double> BFSCBBsolve(Vb prec, Vb child, Vd s, Vd t, bool print);
     pair<list<int>, double> localSearch(Vb prec, Vb child, Vd s, Vd t, bool print);
+    pair<list<int>, double> BFSCBBGuSolve(Vb prec, Vb child, Vd s, Vd t, bool print);
 };
 
 #endif

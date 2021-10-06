@@ -1539,3 +1539,3328 @@ H99797 73891                    14966.000000 9853.00000  34.2%   3.5   22s
  177788 131384 14480.0000   92    8 14946.0000 9883.00000  33.9%   3.4   35s
  212031 156495 11222.0000   53   36 14946.0000 9893.00000  33.8%   3.4   40s
 *214137 157660              67    14930.000000 9893.00000  33.7%   3.4   40s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 13:03:21 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 13:53:07 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 13:54:20 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 13:57:32 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:00:11 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:00:49 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:01:05 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:01:18 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:01:33 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:08:22 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:08:45 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:09:44 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:11:25 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:12:06 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:12:38 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:13:00 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:29:00 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 213 rows, 108 columns and 838 nonzeros
+Model fingerprint: 0x9cea230c
+Model has 9 quadratic constraints
+Variable types: 0 continuous, 108 integer (90 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 7e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 141 rows and 72 columns
+Presolve time: 0.01s
+Presolved: 72 rows, 36 columns, 198 nonzeros
+Variable types: 0 continuous, 36 integer (27 binary)
+Found heuristic solution: objective 127.0000000
+
+Root relaxation: objective 4.000000e+01, 19 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   49.00000    0   17  127.00000   49.00000  61.4%     -    0s
+H    0     0                     118.0000000   49.00000  58.5%     -    0s
+H    0     0                     117.0000000   49.00000  58.1%     -    0s
+H    0     0                     113.0000000   49.00000  56.6%     -    0s
+     0     0   60.37501    0   27  113.00000   60.37501  46.6%     -    0s
+H    0     0                     112.0000000   62.00000  44.6%     -    0s
+H    0     0                     110.0000000   62.00000  43.6%     -    0s
+     0     0   64.00000    0   19  110.00000   64.00000  41.8%     -    0s
+H    0     0                     105.0000000   64.00000  39.0%     -    0s
+     0     0   69.00000    0   19  105.00000   69.00000  34.3%     -    0s
+     0     0   72.00000    0   23  105.00000   72.00000  31.4%     -    0s
+     0     0   74.00000    0   25  105.00000   74.00000  29.5%     -    0s
+     0     0   74.00000    0   27  105.00000   74.00000  29.5%     -    0s
+     0     0   74.00000    0   27  105.00000   74.00000  29.5%     -    0s
+     0     0   76.00000    0   27  105.00000   76.00000  27.6%     -    0s
+     0     0   76.00000    0   27  105.00000   76.00000  27.6%     -    0s
+     0     2   76.00000    0   26  105.00000   76.00000  27.6%     -    0s
+H  194   123                     103.0000000   76.00000  26.2%   6.3    0s
+H  635   135                     101.0000000   80.00000  20.8%   4.4    0s
+
+Cutting planes:
+  Implied bound: 25
+  MIR: 33
+  StrongCG: 1
+  Inf proof: 3
+  Mod-K: 1
+  RLT: 6
+  Relax-and-lift: 25
+
+Explored 1228 nodes (5209 simplex iterations) in 0.19 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 9: 101 103 105 ... 127
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.010000000000e+02, best bound 1.010000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:30:00 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 213 rows, 108 columns and 838 nonzeros
+Model fingerprint: 0x9cea230c
+Model has 9 quadratic constraints
+Variable types: 0 continuous, 108 integer (90 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 7e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 141 rows and 72 columns
+Presolve time: 0.00s
+Presolved: 72 rows, 36 columns, 198 nonzeros
+Variable types: 0 continuous, 36 integer (27 binary)
+Found heuristic solution: objective 127.0000000
+
+Root relaxation: objective 4.000000e+01, 19 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   49.00000    0   17  127.00000   49.00000  61.4%     -    0s
+H    0     0                     118.0000000   49.00000  58.5%     -    0s
+H    0     0                     117.0000000   49.00000  58.1%     -    0s
+H    0     0                     113.0000000   49.00000  56.6%     -    0s
+     0     0   60.37501    0   27  113.00000   60.37501  46.6%     -    0s
+H    0     0                     112.0000000   62.00000  44.6%     -    0s
+H    0     0                     110.0000000   62.00000  43.6%     -    0s
+     0     0   64.00000    0   19  110.00000   64.00000  41.8%     -    0s
+H    0     0                     105.0000000   64.00000  39.0%     -    0s
+     0     0   69.00000    0   19  105.00000   69.00000  34.3%     -    0s
+     0     0   72.00000    0   23  105.00000   72.00000  31.4%     -    0s
+     0     0   74.00000    0   25  105.00000   74.00000  29.5%     -    0s
+     0     0   74.00000    0   27  105.00000   74.00000  29.5%     -    0s
+     0     0   74.00000    0   27  105.00000   74.00000  29.5%     -    0s
+     0     0   76.00000    0   27  105.00000   76.00000  27.6%     -    0s
+     0     0   76.00000    0   27  105.00000   76.00000  27.6%     -    0s
+     0     2   76.00000    0   26  105.00000   76.00000  27.6%     -    0s
+H  194   123                     103.0000000   76.00000  26.2%   6.3    0s
+H  635   135                     101.0000000   80.00000  20.8%   4.4    0s
+
+Cutting planes:
+  Implied bound: 25
+  MIR: 33
+  StrongCG: 1
+  Inf proof: 3
+  Mod-K: 1
+  RLT: 6
+  Relax-and-lift: 25
+
+Explored 1228 nodes (5209 simplex iterations) in 0.21 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 9: 101 103 105 ... 127
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.010000000000e+02, best bound 1.010000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:31:37 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 213 rows, 108 columns and 838 nonzeros
+Model fingerprint: 0x9cea230c
+Model has 9 quadratic constraints
+Variable types: 0 continuous, 108 integer (90 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 7e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 141 rows and 72 columns
+Presolve time: 0.00s
+Presolved: 72 rows, 36 columns, 198 nonzeros
+Variable types: 0 continuous, 36 integer (27 binary)
+Found heuristic solution: objective 127.0000000
+
+Root relaxation: objective 4.000000e+01, 19 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   49.00000    0   17  127.00000   49.00000  61.4%     -    0s
+H    0     0                     118.0000000   49.00000  58.5%     -    0s
+H    0     0                     117.0000000   49.00000  58.1%     -    0s
+H    0     0                     113.0000000   49.00000  56.6%     -    0s
+     0     0   60.37501    0   27  113.00000   60.37501  46.6%     -    0s
+H    0     0                     112.0000000   62.00000  44.6%     -    0s
+H    0     0                     110.0000000   62.00000  43.6%     -    0s
+     0     0   64.00000    0   19  110.00000   64.00000  41.8%     -    0s
+H    0     0                     105.0000000   64.00000  39.0%     -    0s
+     0     0   69.00000    0   19  105.00000   69.00000  34.3%     -    0s
+     0     0   72.00000    0   23  105.00000   72.00000  31.4%     -    0s
+     0     0   74.00000    0   25  105.00000   74.00000  29.5%     -    0s
+     0     0   74.00000    0   27  105.00000   74.00000  29.5%     -    0s
+     0     0   74.00000    0   27  105.00000   74.00000  29.5%     -    0s
+     0     0   76.00000    0   27  105.00000   76.00000  27.6%     -    0s
+     0     0   76.00000    0   27  105.00000   76.00000  27.6%     -    0s
+     0     2   76.00000    0   26  105.00000   76.00000  27.6%     -    0s
+H  194   123                     103.0000000   76.00000  26.2%   6.3    0s
+H  635   135                     101.0000000   80.00000  20.8%   4.4    0s
+
+Cutting planes:
+  Implied bound: 25
+  MIR: 33
+  StrongCG: 1
+  Inf proof: 3
+  Mod-K: 1
+  RLT: 6
+  Relax-and-lift: 25
+
+Explored 1228 nodes (5209 simplex iterations) in 0.20 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 9: 101 103 105 ... 127
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.010000000000e+02, best bound 1.010000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:32:02 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 216 rows, 108 columns and 841 nonzeros
+Model fingerprint: 0x9ad80af6
+Model has 9 quadratic constraints
+Variable types: 0 continuous, 108 integer (90 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 7e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 144 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 72 rows, 33 columns, 192 nonzeros
+Variable types: 0 continuous, 33 integer (24 binary)
+
+Root relaxation: objective 5.000000e+01, 16 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   50.00000    0   16          -   50.00000      -     -    0s
+H    0     0                     123.0000000   50.00000  59.3%     -    0s
+H    0     0                     120.0000000   50.00000  58.3%     -    0s
+H    0     0                     118.0000000   50.00000  57.6%     -    0s
+H    0     0                     112.0000000   50.00000  55.4%     -    0s
+H    0     0                     107.0000000   55.00000  48.6%     -    0s
+     0     0   65.00000    0   16  107.00000   65.00000  39.3%     -    0s
+     0     0   75.00000    0   23  107.00000   75.00000  29.9%     -    0s
+     0     0   75.00000    0   23  107.00000   75.00000  29.9%     -    0s
+     0     0   79.00000    0   19  107.00000   79.00000  26.2%     -    0s
+     0     0   80.00000    0   19  107.00000   80.00000  25.2%     -    0s
+H    0     0                     106.0000000   80.00000  24.5%     -    0s
+     0     2   80.00000    0   19  106.00000   80.00000  24.5%     -    0s
+H   16    20                     104.0000000   80.00000  23.1%   9.6    0s
+H   83    54                     101.0000000   80.00000  20.8%   4.5    0s
+
+Cutting planes:
+  MIR: 8
+  Inf proof: 1
+  Zero half: 1
+  RLT: 5
+  Relax-and-lift: 11
+
+Explored 341 nodes (1065 simplex iterations) in 0.08 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 8: 101 104 106 ... 123
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.010000000000e+02, best bound 1.010000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:32:32 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 216 rows, 108 columns and 841 nonzeros
+Model fingerprint: 0xb927162c
+Model has 9 quadratic constraints
+Variable types: 0 continuous, 108 integer (90 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 7e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 144 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 72 rows, 33 columns, 192 nonzeros
+Variable types: 0 continuous, 33 integer (24 binary)
+Found heuristic solution: objective 100077.00000
+
+Root relaxation: objective 6.200000e+01, 12 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   62.00000    0   10 100077.000   62.00000   100%     -    0s
+H    0     0                     124.0000000   62.00000  50.0%     -    0s
+H    0     0                     121.0000000   62.00000  48.8%     -    0s
+H    0     0                     117.0000000   62.00000  47.0%     -    0s
+H    0     0                     115.0000000   62.00000  46.1%     -    0s
+H    0     0                     111.0000000   62.00000  44.1%     -    0s
+     0     0   71.00000    0    8  111.00000   71.00000  36.0%     -    0s
+H    0     0                     109.0000000   71.00000  34.9%     -    0s
+H    0     0                     107.0000000   71.00000  33.6%     -    0s
+H    0     0                     106.0000000   71.00000  33.0%     -    0s
+     0     0   85.00000    0   15  106.00000   85.00000  19.8%     -    0s
+H    0     0                     105.0000000   85.00000  19.0%     -    0s
+H    0     0                     104.0000000   85.00000  18.3%     -    0s
+     0     0   91.00000    0   13  104.00000   91.00000  12.5%     -    0s
+     0     0   92.00000    0   14  104.00000   92.00000  11.5%     -    0s
+H    0     0                     103.0000000   92.00000  10.7%     -    0s
+     0     0   96.00000    0   16  103.00000   96.00000  6.80%     -    0s
+H    0     0                     101.0000000   96.00000  4.95%     -    0s
+     0     0   97.00000    0   14  101.00000   97.00000  3.96%     -    0s
+     0     0   97.00000    0   16  101.00000   97.00000  3.96%     -    0s
+     0     0   98.00000    0   17  101.00000   98.00000  2.97%     -    0s
+     0     0   98.00000    0   17  101.00000   98.00000  2.97%     -    0s
+     0     0   98.00000    0   17  101.00000   98.00000  2.97%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 6
+  MIR: 13
+  RLT: 2
+  Relax-and-lift: 1
+
+Explored 1 nodes (92 simplex iterations) in 0.05 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 101 103 104 ... 117
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.010000000000e+02, best bound 1.010000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:34:36 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 108 columns and 478 nonzeros
+Model fingerprint: 0xc2717cab
+Model has 9 quadratic constraints
+Variable types: 0 continuous, 108 integer (90 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 7e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 69 rows and 72 columns
+Presolve time: 0.00s
+Presolved: 72 rows, 36 columns, 198 nonzeros
+Variable types: 0 continuous, 36 integer (27 binary)
+Found heuristic solution: objective 127.0000000
+
+Root relaxation: objective 4.000000e+01, 19 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   49.00000    0   17  127.00000   49.00000  61.4%     -    0s
+H    0     0                     118.0000000   49.00000  58.5%     -    0s
+H    0     0                     117.0000000   49.00000  58.1%     -    0s
+     0     0   60.37501    0   27  117.00000   60.37501  48.4%     -    0s
+H    0     0                     115.0000000   60.37501  47.5%     -    0s
+H    0     0                     109.0000000   60.37501  44.6%     -    0s
+     0     0   61.60000    0   19  109.00000   61.60000  43.5%     -    0s
+H    0     0                     105.0000000   61.60000  41.3%     -    0s
+     0     0   67.00000    0   19  105.00000   67.00000  36.2%     -    0s
+     0     0   69.00000    0   23  105.00000   69.00000  34.3%     -    0s
+     0     0   71.00000    0   25  105.00000   71.00000  32.4%     -    0s
+     0     0   72.00000    0   27  105.00000   72.00000  31.4%     -    0s
+     0     0   72.00000    0   27  105.00000   72.00000  31.4%     -    0s
+     0     0   75.00000    0   27  105.00000   75.00000  28.6%     -    0s
+     0     0   75.00000    0   27  105.00000   75.00000  28.6%     -    0s
+     0     2   75.00000    0   26  105.00000   75.00000  28.6%     -    0s
+H  204   130                     101.0000000   75.00000  25.7%   6.3    0s
+
+Cutting planes:
+  Implied bound: 25
+  MIR: 31
+  StrongCG: 1
+  Inf proof: 8
+  Mod-K: 1
+  RLT: 6
+  Relax-and-lift: 22
+
+Explored 1195 nodes (5032 simplex iterations) in 0.20 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 7: 101 105 109 ... 127
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.010000000000e+02, best bound 1.010000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:35:12 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 144 rows, 108 columns and 481 nonzeros
+Model fingerprint: 0x269e258e
+Model has 9 quadratic constraints
+Variable types: 0 continuous, 108 integer (90 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 7e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 72 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 72 rows, 33 columns, 192 nonzeros
+Variable types: 0 continuous, 33 integer (24 binary)
+Found heuristic solution: objective 100077.00000
+
+Root relaxation: objective 6.200000e+01, 13 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   62.00000    0   10 100077.000   62.00000   100%     -    0s
+H    0     0                     125.0000000   62.00000  50.4%     -    0s
+H    0     0                     119.0000000   62.00000  47.9%     -    0s
+H    0     0                     117.0000000   62.00000  47.0%     -    0s
+H    0     0                     115.0000000   62.00000  46.1%     -    0s
+H    0     0                     111.0000000   62.00000  44.1%     -    0s
+H    0     0                     105.0000000   66.00000  37.1%     -    0s
+H    0     0                     103.0000000   71.00000  31.1%     -    0s
+     0     0   71.00000    0   17  103.00000   71.00000  31.1%     -    0s
+H    0     0                     102.0000000   71.00000  30.4%     -    0s
+H    0     0                     101.0000000   71.00000  29.7%     -    0s
+     0     0   90.00000    0   15  101.00000   90.00000  10.9%     -    0s
+     0     0   94.00000    0   14  101.00000   94.00000  6.93%     -    0s
+     0     0   94.00000    0   14  101.00000   94.00000  6.93%     -    0s
+     0     0   96.00000    0   14  101.00000   96.00000  4.95%     -    0s
+     0     0   97.00000    0   13  101.00000   97.00000  3.96%     -    0s
+     0     2   97.00000    0   13  101.00000   97.00000  3.96%     -    0s
+
+Cutting planes:
+  Implied bound: 10
+  MIR: 8
+  Mod-K: 1
+  RLT: 3
+  Relax-and-lift: 3
+
+Explored 107 nodes (646 simplex iterations) in 0.08 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 101 102 103 ... 100077
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.010000000000e+02, best bound 1.010000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:36:05 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 144 rows, 108 columns and 481 nonzeros
+Model fingerprint: 0xd284d013
+Model has 9 quadratic constraints
+Variable types: 0 continuous, 108 integer (90 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 7e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 72 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 72 rows, 33 columns, 192 nonzeros
+Variable types: 0 continuous, 33 integer (24 binary)
+Found heuristic solution: objective 100086.00000
+Found heuristic solution: objective 121.0000000
+
+Root relaxation: objective 6.500000e+01, 11 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   65.00000    0    8  121.00000   65.00000  46.3%     -    0s
+H    0     0                     115.0000000   65.00000  43.5%     -    0s
+H    0     0                     113.0000000   65.00000  42.5%     -    0s
+H    0     0                     111.0000000   65.00000  41.4%     -    0s
+H    0     0                     108.0000000   65.00000  39.8%     -    0s
+     0     0   65.83365    0   16  108.00000   65.83365  39.0%     -    0s
+H    0     0                     107.0000000   65.83365  38.5%     -    0s
+H    0     0                     106.0000000   65.83365  37.9%     -    0s
+     0     0   77.56371    0   11  106.00000   77.56371  26.8%     -    0s
+     0     0   90.00000    0   15  106.00000   90.00000  15.1%     -    0s
+     0     0   90.00000    0   15  106.00000   90.00000  15.1%     -    0s
+     0     0   90.00000    0   15  106.00000   90.00000  15.1%     -    0s
+     0     0   90.00000    0   19  106.00000   90.00000  15.1%     -    0s
+     0     0   94.00000    0   17  106.00000   94.00000  11.3%     -    0s
+     0     0   95.00000    0   16  106.00000   95.00000  10.4%     -    0s
+     0     0   95.00000    0   10  106.00000   95.00000  10.4%     -    0s
+     0     0   99.00000    0   15  106.00000   99.00000  6.60%     -    0s
+     0     0  100.00000    0   15  106.00000  100.00000  5.66%     -    0s
+     0     2  100.00000    0   15  106.00000  100.00000  5.66%     -    0s
+
+Cutting planes:
+  Implied bound: 6
+  MIR: 8
+  RLT: 1
+  Relax-and-lift: 6
+
+Explored 65 nodes (441 simplex iterations) in 0.06 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 8: 106 107 108 ... 100086
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.060000000000e+02, best bound 1.060000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:41:42 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:42:35 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:43:15 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:44:37 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0x85c3fe3a
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (234 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 5e+05]
+  Objective range  [1e+00, 5e+01]
+  QObjective range [1e+02, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [3e+05, 4e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 819 columns, 2349 nonzeros
+Presolved model has 288 SOS constraint(s)
+Variable types: 0 continuous, 819 integer (441 binary)
+Found heuristic solution: objective 23.0000000
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 1 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 23 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:45:51 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0x7384834a
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (234 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 5e+05]
+  Objective range  [1e+00, 1e+04]
+  QObjective range [2e+04, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [3e+05, 4e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 819 columns, 2349 nonzeros
+Presolved model has 288 SOS constraint(s)
+Variable types: 0 continuous, 819 integer (441 binary)
+Found heuristic solution: objective 23.0000000
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 1 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 23 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:51:35 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0x1999e028
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (162 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 5e+05]
+  Objective range  [1e+00, 1e+04]
+  QObjective range [2e+04, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [3e+05, 4e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 819 columns, 2349 nonzeros
+Presolved model has 288 SOS constraint(s)
+Variable types: 0 continuous, 819 integer (441 binary)
+Found heuristic solution: objective 23.0000000
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 1 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 23 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 14:52:08 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0x764b5e60
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (162 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 5e+05]
+  Objective range  [1e+00, 1e+04]
+  QObjective range [2e+04, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [3e+05, 4e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 963 columns, 2421 nonzeros
+Presolved model has 432 SOS constraint(s)
+Variable types: 0 continuous, 963 integer (369 binary)
+Found heuristic solution: objective 23.0000000
+
+Root relaxation: cutoff, 342 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        23.00000   23.00000  0.00%     -    0s
+
+Explored 1 nodes (342 simplex iterations) in 0.02 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 23 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:04:30 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0x764b5e60
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (162 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 5e+05]
+  Objective range  [1e+00, 1e+04]
+  QObjective range [2e+04, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [3e+05, 4e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 963 columns, 2421 nonzeros
+Presolved model has 432 SOS constraint(s)
+Variable types: 0 continuous, 963 integer (369 binary)
+Found heuristic solution: objective 23.0000000
+
+Root relaxation: cutoff, 342 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        23.00000   23.00000  0.00%     -    0s
+
+Explored 1 nodes (342 simplex iterations) in 0.02 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 23 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:05:27 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0x764b5e60
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (162 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 5e+05]
+  Objective range  [1e+00, 1e+04]
+  QObjective range [2e+04, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [3e+05, 4e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 963 columns, 2421 nonzeros
+Presolved model has 432 SOS constraint(s)
+Variable types: 0 continuous, 963 integer (369 binary)
+Found heuristic solution: objective 23.0000000
+
+Root relaxation: cutoff, 342 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        23.00000   23.00000  0.00%     -    0s
+
+Explored 1 nodes (342 simplex iterations) in 0.03 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 23 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:17:35 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0x764b5e60
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (162 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 5e+05]
+  Objective range  [1e+00, 1e+04]
+  QObjective range [2e+04, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [3e+05, 4e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 963 columns, 2421 nonzeros
+Presolved model has 432 SOS constraint(s)
+Variable types: 0 continuous, 963 integer (369 binary)
+Found heuristic solution: objective 23.0000000
+
+Root relaxation: cutoff, 342 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        23.00000   23.00000  0.00%     -    0s
+
+Explored 1 nodes (342 simplex iterations) in 0.02 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 23 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:18:00 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0x764b5e60
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (162 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 5e+05]
+  Objective range  [1e+00, 1e+04]
+  QObjective range [2e+04, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [3e+05, 4e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 963 columns, 2421 nonzeros
+Presolved model has 432 SOS constraint(s)
+Variable types: 0 continuous, 963 integer (369 binary)
+Found heuristic solution: objective 23.0000000
+
+Root relaxation: cutoff, 342 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        23.00000   23.00000  0.00%     -    0s
+
+Explored 1 nodes (342 simplex iterations) in 0.02 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 23 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:21:49 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0x27b4bca2
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (162 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 3e+05]
+  Objective range  [1e+00, 1e+04]
+  QObjective range [2e+04, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [2e+05, 3e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 963 columns, 2385 nonzeros
+Presolved model has 432 SOS constraint(s)
+Variable types: 0 continuous, 963 integer (369 binary)
+
+Root relaxation: objective 2.300000e+01, 378 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   23.00000    0   36          -   23.00000      -     -    0s
+     0     0   23.00000    0   36          -   23.00000      -     -    0s
+H    0     0                    50088.000000   23.00000   100%     -    0s
+     0     2   23.00000    0   36 50088.0000   23.00000   100%     -    0s
+H   35    40                    20097.000000   31.00000   100%   2.6    0s
+H  285   441                     126.0000000   31.00000  75.4%   2.5    0s
+*  455   724              70     122.0000000   31.00000  74.6%   3.2    0s
+*  942   951              66     121.0000000   31.00000  74.4%   3.5    0s
+* 1089  1200              62     112.0000000   31.00000  72.3%   3.8    0s
+H 1401  1171                     110.0000000   45.00000  59.1%   4.4    0s
+* 1919  1304              45     106.0000000   48.00000  54.7%   4.3    0s
+H 5850  2658                     105.0000000   57.00000  45.7%   3.9    0s
+H 6013  2466                     103.0000000   57.00000  44.7%   3.9    0s
+H19718  7863                     101.0000000   65.00000  35.6%   3.7    1s
+ 36096 11960     cutoff   42       101.00000   66.00000  34.7%   4.0    5s
+ 87375 18227   96.00000   45    8  101.00000   74.00000  26.7%   4.5   10s
+ 147558 32072   80.00000   42    7  101.00000   77.00000  23.8%   4.6   15s
+ 219701 45755   83.00000   43    6  101.00000   79.00000  21.8%   4.7   20s
+ 290380 54480   86.00000   39    6  101.00000   80.00000  20.8%   4.6   25s
+ 367222 66004     cutoff   49       101.00000   81.00000  19.8%   4.5   30s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:22:45 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 141 rows, 252 columns and 550 nonzeros
+Model fingerprint: 0xa1a0bf84
+Model has 72 quadratic objective terms
+Model has 153 quadratic constraints
+Variable types: 0 continuous, 252 integer (162 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 3e+05]
+  Objective range  [1e+00, 1e+01]
+  QObjective range [2e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [2e+05, 3e+05]
+Presolve added 84 rows and 9 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 963 columns, 2385 nonzeros
+Presolved model has 432 SOS constraint(s)
+Variable types: 0 continuous, 963 integer (369 binary)
+
+Root relaxation: objective 2.300000e+01, 378 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   23.00000    0   36          -   23.00000      -     -    0s
+     0     0   23.00000    0   36          -   23.00000      -     -    0s
+H    0     0                     138.0000000   23.00000  83.3%     -    0s
+     0     2   23.00000    0   36  138.00000   23.00000  83.3%     -    0s
+H   35    40                     117.0000000   31.00000  73.5%   2.6    0s
+* 1498  1261              42     107.0000000   35.00000  67.3%   4.6    0s
+* 1902  1395              43     103.0000000   35.00000  66.0%   4.4    0s
+H 2314  1501                     101.0000000   38.00000  62.4%   4.4    0s
+ 43527 20173   52.02143   40  127  101.00000   52.00000  48.5%   3.8    5s
+ 120884 40380   89.00000   54   30  101.00000   59.00000  41.6%   4.1   10s
+ 201982 80461   64.11111   56   38  101.00000   60.10127  40.5%   4.2   15s
+ 276955 114174   99.00000   60    7  101.00000   62.00000  38.6%   4.3   20s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:24:59 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5797 rows, 10860 columns and 25494 nonzeros
+Model fingerprint: 0x377388e4
+Model has 3540 quadratic objective terms
+Model has 7140 quadratic constraints
+Variable types: 0 continuous, 10860 integer (7200 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 3e+05]
+  Objective range  [1e+00, 1e+01]
+  QObjective range [2e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [2e+05, 3e+05]
+Presolve added 4883 rows and 1452 columns
+Presolve time: 0.21s
+Presolved: 40176 rows, 47316 columns, 119676 nonzeros
+Presolved model has 21240 SOS constraint(s)
+Variable types: 0 continuous, 47316 integer (18876 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 4.470000e+02, 0 iterations, 0.13 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  447.00000    0 1968          -  447.00000      -     -    3s
+     0     2  448.00000    0 1968          -  448.00000      -     -    4s
+   109   130  477.00000   16 1909          -  448.00000      -   2.6    5s
+  1104  1166  623.00000  144 1712          -  448.00000      -   3.9   10s
+  1799  1879  681.00000  222 1647          -  448.00000      -   4.0   15s
+H 1975  2037                    194040.00000  448.00000   100%   3.8   17s
+H 2036  2099                    192830.00000  448.00000   100%   3.8   17s
+H 2066  2099                    192120.00000  448.00000   100%   3.8   17s
+H 2125  2170                    189160.00000  448.00000   100%   3.7   18s
+H 2160  2170                    188810.00000  448.00000   100%   3.7   18s
+H 2186  2245                    180870.00000  448.00000   100%   3.7   19s
+  2244  2337  681.00000  277 1647 180870.000  448.00000   100%   3.6   20s
+H 2266  2337                    170800.00000  448.00000   100%   3.6   20s
+H 2476  2525                    159490.00000  448.00000   100%   3.5   22s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:25:44 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5797 rows, 10860 columns and 25494 nonzeros
+Model fingerprint: 0xdcd9ac37
+Model has 3540 quadratic objective terms
+Model has 7140 quadratic constraints
+Variable types: 0 continuous, 10860 integer (7200 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 3e+05]
+  Objective range  [1e+00, 5e+01]
+  QObjective range [1e+02, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [2e+05, 3e+05]
+Presolve added 4883 rows and 1452 columns
+Presolve time: 0.22s
+Presolved: 40176 rows, 47316 columns, 119676 nonzeros
+Presolved model has 21240 SOS constraint(s)
+Variable types: 0 continuous, 47316 integer (18876 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 4.470000e+02, 0 iterations, 0.13 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  447.00000    0 1968          -  447.00000      -     -    3s
+     0     2  448.00000    0 1968          -  448.00000      -     -    4s
+   150   175  477.00000   25 1909          -  448.00000      -   2.5    5s
+  1168  1235  623.00000  151 1707          -  448.00000      -   3.8   10s
+  1884  1967  681.00000  232 1648          -  448.00000      -   3.9   15s
+H 1975  2007                    1010685.0000  448.00000   100%   3.8   16s
+H 2006  2045                    974090.00000  448.00000   100%   3.8   17s
+H 2017  2045                    966441.00000  448.00000   100%   3.8   17s
+H 2077  2117                    951641.00000  448.00000   100%   3.7   18s
+H 2113  2117                    948941.00000  448.00000   100%   3.7   18s
+H 2192  2267                    907991.00000  448.00000   100%   3.7   19s
+  2266  2349  681.00000  279 1647 907991.000  448.00000   100%   3.6   20s
+H 2272  2349                    855291.00000  448.00000   100%   3.6   20s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:26:20 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5797 rows, 10860 columns and 25494 nonzeros
+Model fingerprint: 0xeeb9e2c4
+Model has 3540 quadratic objective terms
+Model has 7140 quadratic constraints
+Variable types: 0 continuous, 10860 integer (7200 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+05]
+  QLMatrix range   [1e+00, 3e+05]
+  Objective range  [1e+00, 1e+03]
+  QObjective range [2e+03, 2e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [2e+05, 3e+05]
+Presolve added 4883 rows and 1452 columns
+Presolve time: 0.21s
+Presolved: 40176 rows, 47316 columns, 119676 nonzeros
+Presolved model has 21240 SOS constraint(s)
+Variable types: 0 continuous, 47316 integer (18876 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 4.470000e+02, 0 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  447.00000    0 1968          -  447.00000      -     -    3s
+     0     2  448.00000    0 1968          -  448.00000      -     -    4s
+   174   207  477.00000   29 1908          -  448.00000      -   2.5    5s
+  1108  1172  623.00000  146 1683          -  448.00000      -   4.1   10s
+  2004  2142  903.00000  260 1463          -  448.00000      -   4.3   15s
+  2913  3093 140084.000  398 1354          -  448.00000      -   5.5   20s
+  3793  4057 140165.000  509 1235          -  448.00000      -   5.9   25s
+  4817  4992 337381.000  657  974          -  448.00000      -   8.1   31s
+H 5243  4972                    659638.00000  448.00000   100%  10.1   34s
+H 5244  4726                    289638.00000  448.00000   100%  10.1   35s
+H 5308  4532                    280638.00000  448.00000   100%  10.1   35s
+H 5338  4330                    279638.00000  448.00000   100%  10.1   35s
+H 5339  4117                    274638.00000  448.00000   100%  10.1   35s
+H 5374  3938                    267638.00000  448.00000   100%  10.1   36s
+H 5523  3871                    264638.00000  448.00000   100%  10.1   37s
+H 5552  3682                    19042.000000  448.00000  97.6%  10.2   38s
+H 5553  3509                    18929.000000  448.00000  97.6%  10.2   38s
+  5927  3897  477.00000   89 1977 18929.0000  448.00000  97.6%  10.1   40s
+H 6700  4121                    18660.000000  448.00000  97.6%  10.4   44s
+  6716  4403  504.00000  173 1984 18660.0000  448.00000  97.6%  10.4   46s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:27:32 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 9974 rows, 4030 columns and 42349 nonzeros
+Model fingerprint: 0xde12d7d7
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 6192 rows and 2302 columns
+Presolve time: 0.05s
+Presolved: 3785 rows, 1731 columns, 11021 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1731 integer (1666 binary)
+
+Root relaxation: objective 9.178000e+03, 863 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.03904    0   82          - 9178.03904      -     -    0s
+     0     0 9235.73826    0   88          - 9235.73826      -     -    0s
+     0     0 9235.78176    0   87          - 9235.78176      -     -    0s
+     0     0 9246.91293    0   87          - 9246.91293      -     -    0s
+     0     0 9248.09768    0   88          - 9248.09768      -     -    0s
+     0     0 9255.96740    0   86          - 9255.96740      -     -    0s
+     0     0 9255.99111    0   86          - 9255.99111      -     -    0s
+     0     0 9255.99111    0   86          - 9255.99111      -     -    2s
+     0     2 9271.53191    0   86          - 9271.53191      -     -    3s
+* 1823  1818             376    18836.000000 9307.36063  50.6%   3.7    3s
+* 1824  1814             375    18808.000000 9307.36063  50.5%   3.7    3s
+* 1860  1814             409    18800.000000 9312.04248  50.5%   3.8    3s
+* 1861  1814             408    18790.000000 9312.04248  50.4%   3.8    3s
+H 1926  1806                    18783.000000 9312.27814  50.4%   3.9    4s
+H 1928  1799                    18747.000000 9312.27814  50.3%   3.9    4s
+H 1928  1688                    18062.000000 9312.27814  48.4%   3.9    4s
+H 1980  1767                    18055.000000 9312.27814  48.4%   4.1    4s
+H 1989  1765                    18044.000000 9312.27814  48.4%   4.1    4s
+H 2058  1804                    17932.000000 9312.27814  48.1%   4.3    4s
+H 2147  1857                    17872.000000 9312.27814  47.9%   4.3    5s
+H 2156  1253                    14997.000000 9312.27814  37.9%   4.3    5s
+H 2159  1192                    14927.000000 9488.30680  36.4%   4.3    6s
+H 2192  1152                    14924.000000 9999.61890  33.0%   4.3    8s
+H 2198  1098                    14918.000000 10033.7778  32.7%   4.2    9s
+H 2199  1043                    14917.000000 10048.4826  32.6%   4.2    9s
+H 2199   990                    14903.000000 10048.4826  32.6%   4.2    9s
+  2209   997 11452.0000   89  174 14903.0000 10087.1274  32.3%   4.2   10s
+H 2218   952                    14902.000000 10117.4684  32.1%   4.2   10s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:29:32 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 9975 rows, 4030 columns and 42350 nonzeros
+Model fingerprint: 0xa58bc67f
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 6193 rows and 2303 columns
+Presolve time: 0.05s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 9.178000e+03, 943 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9178.00000    0   70          - 9178.00000      -     -    0s
+     0     0 9178.00000    0   70          - 9178.00000      -     -    0s
+     0     0 9178.04772    0   90          - 9178.04772      -     -    0s
+     0     0 9243.71745    0   94          - 9243.71745      -     -    0s
+     0     0 9257.91174    0   93          - 9257.91174      -     -    0s
+     0     0 9257.91174    0   93          - 9257.91174      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    2s
+     0     2 9281.04641    0   92          - 9281.04641      -     -    2s
+* 1823  1822             349    18937.000000 9306.89981  50.9%   4.2    3s
+* 1824  1822             348    18921.000000 9306.89981  50.8%   4.2    3s
+H 1904  1802                    18474.000000 9306.89981  49.6%   4.2    4s
+H 1904  1790                    18300.000000 9306.89981  49.1%   4.2    4s
+H 1906  1772                    18207.000000 9306.89981  48.9%   4.2    4s
+H 1907  1769                    18140.000000 9306.89981  48.7%   4.2    4s
+H 1907  1767                    17857.000000 9306.89981  47.9%   4.2    4s
+H 1994  1846                    17847.000000 9306.89981  47.9%   4.3    4s
+H 2035  1889                    17839.000000 9317.12773  47.8%   4.4    4s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:29:50 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 9975 rows, 4030 columns and 42350 nonzeros
+Model fingerprint: 0xa58bc67f
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 6193 rows and 2303 columns
+Presolve time: 0.05s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 9.178000e+03, 943 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9178.00000    0   70          - 9178.00000      -     -    0s
+     0     0 9178.00000    0   70          - 9178.00000      -     -    0s
+     0     0 9178.04772    0   90          - 9178.04772      -     -    0s
+     0     0 9243.71745    0   94          - 9243.71745      -     -    0s
+     0     0 9257.91174    0   93          - 9257.91174      -     -    0s
+     0     0 9257.91174    0   93          - 9257.91174      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    2s
+     0     2 9281.04641    0   92          - 9281.04641      -     -    3s
+* 1823  1822             349    18937.000000 9306.89981  50.9%   4.2    3s
+* 1824  1822             348    18921.000000 9306.89981  50.8%   4.2    3s
+H 1904  1802                    18474.000000 9306.89981  49.6%   4.2    4s
+H 1904  1790                    18300.000000 9306.89981  49.1%   4.2    4s
+H 1906  1772                    18207.000000 9306.89981  48.9%   4.2    4s
+H 1907  1769                    18140.000000 9306.89981  48.7%   4.2    4s
+H 1907  1767                    17857.000000 9306.89981  47.9%   4.2    4s
+H 1994  1846                    17847.000000 9306.89981  47.9%   4.3    4s
+H 2035  1889                    17839.000000 9317.12773  47.8%   4.4    4s
+H 2138  1958                    17767.000000 9317.12773  47.6%   4.3    4s
+H 2140  1949                    17718.000000 9317.12773  47.4%   4.4    4s
+H 2141  1932                    17606.000000 9317.12773  47.1%   4.4    4s
+  2217  2088 10506.0000   60   37 17606.0000 9317.12773  47.1%   4.4    5s
+H 2306  1804                    16100.000000 9317.12773  42.1%   4.4    5s
+H 2309  1715                    15072.000000 9513.98243  36.9%   4.4    6s
+H 2309  1629                    14972.000000 9513.98243  36.5%   4.4    6s
+  2367  1668 10330.8892   23  178 14972.0000 10330.8892  31.0%   4.3   10s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:31:13 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 9975 rows, 4030 columns and 42350 nonzeros
+Model fingerprint: 0xa58bc67f
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 6193 rows and 2303 columns
+Presolve time: 0.05s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 9.178000e+03, 943 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9178.00000    0   70          - 9178.00000      -     -    0s
+     0     0 9178.00000    0   70          - 9178.00000      -     -    0s
+     0     0 9178.04772    0   90          - 9178.04772      -     -    0s
+     0     0 9243.71745    0   94          - 9243.71745      -     -    0s
+     0     0 9257.91174    0   93          - 9257.91174      -     -    0s
+     0     0 9257.91174    0   93          - 9257.91174      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    0s
+     0     0 9267.06139    0   92          - 9267.06139      -     -    2s
+     0     2 9281.04641    0   92          - 9281.04641      -     -    2s
+* 1823  1822             349    18937.000000 9306.89981  50.9%   4.2    3s
+* 1824  1822             348    18921.000000 9306.89981  50.8%   4.2    3s
+H 1904  1802                    18474.000000 9306.89981  49.6%   4.2    4s
+H 1904  1790                    18300.000000 9306.89981  49.1%   4.2    4s
+H 1906  1772                    18207.000000 9306.89981  48.9%   4.2    4s
+H 1907  1769                    18140.000000 9306.89981  48.7%   4.2    4s
+H 1907  1767                    17857.000000 9306.89981  47.9%   4.2    4s
+H 1994  1846                    17847.000000 9306.89981  47.9%   4.3    4s
+H 2035  1889                    17839.000000 9317.12773  47.8%   4.4    4s
+H 2138  1958                    17767.000000 9317.12773  47.6%   4.3    4s
+H 2140  1949                    17718.000000 9317.12773  47.4%   4.4    4s
+H 2141  1932                    17606.000000 9317.12773  47.1%   4.4    4s
+H 2306  1804                    16100.000000 9317.12773  42.1%   4.4    5s
+H 2309  1715                    15072.000000 9513.98243  36.9%   4.4    6s
+H 2309  1629                    14972.000000 9513.98243  36.5%   4.4    6s
+  2373  1672 10529.0000   46  178 14972.0000 10360.7148  30.8%   4.2   10s
+H 2410  1611                    14967.000000 10477.0356  30.0%   4.2   13s
+H 2421  1535                    14958.000000 10486.0055  29.9%   4.2   14s
+  2430  1541 10491.2513   11  191 14958.0000 10491.2513  29.9%   4.1   15s
+H 2439  1470                    14924.000000 10493.2076  29.7%   8.3   16s
+H 2456  1408                    14919.000000 10512.9945  29.5%   8.3   18s
+H 2456  1337                    14916.000000 10512.9945  29.5%   8.3   18s
+H 2456  1270                    14913.000000 10512.9945  29.5%   8.3   18s
+H 2457  1206                    14907.000000 10512.9945  29.5%   8.3   18s
+H 2458  1146                    14904.000000 10518.6337  29.4%   8.3   18s
+  2471  1155 14904.0000  324  197 14904.0000 10553.9902  29.2%   8.2   20s
+H 2472  1097                    14893.000000 10556.0074  29.1%   8.2   20s
+H 2473  1042                    14892.000000 10556.8818  29.1%   8.2   20s
+  2510  1067 12453.0000  138  210 14892.0000 10598.1942  28.8%   8.1   25s
+H 2511  1013                    14888.000000 10598.3818  28.8%   8.1   25s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:41:29 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 9945 rows, 4030 columns and 42320 nonzeros
+Model fingerprint: 0x91567859
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 6163 rows and 2273 columns
+Presolve time: 0.05s
+Presolved: 3785 rows, 1760 columns, 11079 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1760 integer (1695 binary)
+
+Root relaxation: objective 1.668000e+03, 874 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1668.00000    0  650          - 1668.00000      -     -    0s
+     0     0 1670.01209    0  793          - 1670.01209      -     -    0s
+     0     0 1678.80437    0  800          - 1678.80437      -     -    0s
+     0     0 1678.80437    0  799          - 1678.80437      -     -    0s
+     0     0 1689.96108    0  823          - 1689.96108      -     -    0s
+     0     0 1689.96108    0  823          - 1689.96108      -     -    0s
+     0     0 1765.49673    0  717          - 1765.49673      -     -    0s
+     0     0 1773.61419    0  733          - 1773.61419      -     -    0s
+     0     0 1775.62865    0  731          - 1775.62865      -     -    0s
+     0     0 1775.62865    0  732          - 1775.62865      -     -    0s
+     0     0 1819.75652    0  742          - 1819.75652      -     -    0s
+     0     0 1822.59080    0  766          - 1822.59080      -     -    0s
+     0     0 1823.02264    0  769          - 1823.02264      -     -    0s
+     0     0 1865.16695    0  770          - 1865.16695      -     -    0s
+     0     0 1865.93114    0  772          - 1865.93114      -     -    0s
+     0     0 1893.99763    0  732          - 1893.99763      -     -    0s
+     0     0 1901.79242    0  763          - 1901.79242      -     -    1s
+     0     0 1901.97418    0  736          - 1901.97418      -     -    1s
+     0     0 1911.98041    0  791          - 1911.98041      -     -    1s
+     0     0 1915.02051    0  776          - 1915.02051      -     -    1s
+     0     0 1915.56052    0  793          - 1915.56052      -     -    1s
+H    0     0                    17775.000000 1915.56052  89.2%     -    1s
+     0     0 1927.58775    0  777 17775.0000 1927.58775  89.2%     -    1s
+     0     0 1932.16959    0  782 17775.0000 1932.16959  89.1%     -    1s
+     0     0 1932.56599    0  776 17775.0000 1932.56599  89.1%     -    1s
+     0     0 1937.93767    0  763 17775.0000 1937.93767  89.1%     -    1s
+     0     0 1937.93767    0  618 17775.0000 1937.93767  89.1%     -    1s
+     0     2 1937.93767    0  612 17775.0000 1937.93767  89.1%     -    2s
+H   37    41                    17702.000000 1977.32335  88.8%   304    3s
+H  147   150                    17696.000000 1977.32335  88.8%   154    4s
+H  224   229                    17666.000000 1977.32335  88.8%   132    4s
+H  225   229                    17604.000000 1977.32335  88.8%   131    4s
+   383   424 3355.00000   72  310 17604.0000 1977.32335  88.8%  86.1    5s
+H 2608  2447                    17599.000000 2094.59171  88.1%  25.7    9s
+  2617  2453 2892.00000   62  703 17599.0000 2144.15287  87.8%  25.7   10s
+H 2629  2337                    17573.000000 2194.74037  87.5%  25.5   13s
+H 2631  2222                    17516.000000 2210.71129  87.4%  25.5   14s
+  2637  2226 14445.0000  276  697 17516.0000 2215.00960  87.4%  25.5   15s
+H 2640  2115                    17458.000000 2228.82236  87.2%  25.4   16s
+H 2644  2011                    17414.000000 2233.91554  87.2%  25.4   18s
+  2646  2013 13695.0000  233  712 17414.0000 2235.10386  87.2%  25.4   20s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:42:25 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6361 rows, 4030 columns and 23608 nonzeros
+Model fingerprint: 0xa36d2aa2
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2579 rows and 2273 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1760 columns, 11079 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1760 integer (1695 binary)
+
+Root relaxation: objective 1.646000e+03, 876 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1646.00000    0  663          - 1646.00000      -     -    0s
+     0     0 1664.75073    0  823          - 1664.75073      -     -    0s
+     0     0 1664.75073    0  818          - 1664.75073      -     -    0s
+     0     0 1679.28590    0  800          - 1679.28590      -     -    0s
+     0     0 1679.28590    0  795          - 1679.28590      -     -    0s
+     0     0 1692.96741    0  774          - 1692.96741      -     -    0s
+     0     0 1704.88162    0  746          - 1704.88162      -     -    0s
+     0     0 1726.03621    0  758          - 1726.03621      -     -    0s
+     0     0 1726.03621    0  755          - 1726.03621      -     -    0s
+     0     0 1760.88549    0  784          - 1760.88549      -     -    0s
+     0     0 1760.88549    0  785          - 1760.88549      -     -    0s
+     0     0 1788.95390    0  833          - 1788.95390      -     -    0s
+     0     0 1791.04457    0  812          - 1791.04457      -     -    0s
+     0     0 1795.75518    0  816          - 1795.75518      -     -    0s
+     0     0 1796.51080    0  813          - 1796.51080      -     -    0s
+     0     0 1843.92636    0  770          - 1843.92636      -     -    0s
+     0     0 1851.33850    0  781          - 1851.33850      -     -    0s
+     0     0 1853.26900    0  771          - 1853.26900      -     -    0s
+     0     0 1874.68343    0  727          - 1874.68343      -     -    1s
+     0     0 1875.31923    0  746          - 1875.31923      -     -    1s
+H    0     0                    19066.000000 1875.31923  90.2%     -    1s
+     0     0 1894.89939    0  736 19066.0000 1894.89939  90.1%     -    1s
+     0     0 1897.64898    0  748 19066.0000 1897.64898  90.0%     -    1s
+     0     0 1902.21412    0  727 19066.0000 1902.21412  90.0%     -    1s
+     0     0 1903.23123    0  738 19066.0000 1903.23123  90.0%     -    1s
+     0     0 1921.10269    0  746 19066.0000 1921.10269  89.9%     -    1s
+     0     0 1921.10269    0  631 19066.0000 1921.10269  89.9%     -    1s
+     0     2 1921.10269    0  628 19066.0000 1921.10269  89.9%     -    1s
+H   31    35                    19001.000000 1973.93276  89.6%   305    3s
+H   70    74                    18982.000000 1973.93276  89.6%   186    3s
+H  105   115                    18966.000000 1973.93276  89.6%   153    3s
+H  139   156                    18960.000000 1973.93276  89.6%   130    4s
+H  149   156                    18955.000000 1973.93276  89.6%   126    4s
+H  185   188                    18791.000000 1973.93276  89.5%   109    4s
+H  187   196                    18713.000000 1973.93276  89.5%   108    4s
+   762   828 6652.00000  134  126 18713.0000 1973.93276  89.5%  41.2    5s
+* 2717  2673             410    18511.000000 1982.68232  89.3%  18.5    5s
+  2794  2737 18075.0000  481  599 18511.0000 2193.51535  88.2%  19.2   10s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:44:51 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6163 rows, 4030 columns and 23410 nonzeros
+Model fingerprint: 0x7586fba0
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2381 rows and 2273 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1760 columns, 11079 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1760 integer (1695 binary)
+
+Root relaxation: objective 1.646000e+03, 876 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1646.00000    0  663          - 1646.00000      -     -    0s
+     0     0 1664.75073    0  823          - 1664.75073      -     -    0s
+     0     0 1664.75073    0  818          - 1664.75073      -     -    0s
+     0     0 1679.28590    0  800          - 1679.28590      -     -    0s
+     0     0 1679.28590    0  795          - 1679.28590      -     -    0s
+     0     0 1692.96741    0  774          - 1692.96741      -     -    0s
+     0     0 1704.88162    0  746          - 1704.88162      -     -    0s
+     0     0 1726.03621    0  758          - 1726.03621      -     -    0s
+     0     0 1726.03621    0  755          - 1726.03621      -     -    0s
+     0     0 1760.88549    0  784          - 1760.88549      -     -    0s
+     0     0 1760.88549    0  785          - 1760.88549      -     -    0s
+     0     0 1788.95390    0  833          - 1788.95390      -     -    0s
+     0     0 1791.04457    0  812          - 1791.04457      -     -    0s
+     0     0 1795.75518    0  816          - 1795.75518      -     -    0s
+     0     0 1796.51080    0  813          - 1796.51080      -     -    0s
+     0     0 1843.92636    0  770          - 1843.92636      -     -    0s
+     0     0 1851.33850    0  781          - 1851.33850      -     -    0s
+     0     0 1853.26900    0  771          - 1853.26900      -     -    0s
+     0     0 1874.68343    0  727          - 1874.68343      -     -    1s
+     0     0 1875.31923    0  746          - 1875.31923      -     -    1s
+H    0     0                    19066.000000 1875.31923  90.2%     -    1s
+     0     0 1894.89939    0  736 19066.0000 1894.89939  90.1%     -    1s
+     0     0 1897.64898    0  748 19066.0000 1897.64898  90.0%     -    1s
+     0     0 1902.21412    0  727 19066.0000 1902.21412  90.0%     -    1s
+     0     0 1903.23123    0  738 19066.0000 1903.23123  90.0%     -    1s
+     0     0 1921.10269    0  746 19066.0000 1921.10269  89.9%     -    1s
+     0     0 1921.10269    0  631 19066.0000 1921.10269  89.9%     -    1s
+     0     2 1921.10269    0  628 19066.0000 1921.10269  89.9%     -    1s
+H   31    35                    19001.000000 1973.93276  89.6%   305    3s
+H   70    74                    18982.000000 1973.93276  89.6%   186    3s
+H  105   115                    18966.000000 1973.93276  89.6%   153    4s
+H  139   156                    18960.000000 1973.93276  89.6%   130    4s
+H  149   156                    18955.000000 1973.93276  89.6%   126    4s
+H  185   188                    18791.000000 1973.93276  89.5%   109    4s
+H  187   196                    18713.000000 1973.93276  89.5%   108    4s
+   603   652 5830.00000  108  160 18713.0000 1973.93276  89.5%  48.1    5s
+* 2717  2673             410    18511.000000 1982.68232  89.3%  18.5    5s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:45:14 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6163 rows, 4030 columns and 23410 nonzeros
+Model fingerprint: 0xf526f8b1
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 3e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2381 rows and 2273 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1760 columns, 11079 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1760 integer (1695 binary)
+
+Root relaxation: objective 1.646000e+03, 876 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1646.00000    0  663          - 1646.00000      -     -    0s
+     0     0 1664.75073    0  823          - 1664.75073      -     -    0s
+     0     0 1664.75073    0  818          - 1664.75073      -     -    0s
+     0     0 1679.28590    0  800          - 1679.28590      -     -    0s
+     0     0 1679.28590    0  795          - 1679.28590      -     -    0s
+     0     0 1692.96741    0  774          - 1692.96741      -     -    0s
+     0     0 1704.88162    0  746          - 1704.88162      -     -    0s
+     0     0 1726.03621    0  758          - 1726.03621      -     -    0s
+     0     0 1726.03621    0  755          - 1726.03621      -     -    0s
+     0     0 1760.88549    0  784          - 1760.88549      -     -    0s
+     0     0 1760.88549    0  785          - 1760.88549      -     -    0s
+     0     0 1788.95390    0  833          - 1788.95390      -     -    0s
+     0     0 1791.04457    0  812          - 1791.04457      -     -    0s
+     0     0 1795.75518    0  816          - 1795.75518      -     -    0s
+     0     0 1796.51080    0  813          - 1796.51080      -     -    0s
+     0     0 1843.92636    0  770          - 1843.92636      -     -    0s
+     0     0 1851.33850    0  781          - 1851.33850      -     -    0s
+     0     0 1853.26900    0  771          - 1853.26900      -     -    0s
+     0     0 1874.68343    0  727          - 1874.68343      -     -    1s
+     0     0 1875.31923    0  746          - 1875.31923      -     -    1s
+H    0     0                    19066.000000 1875.31923  90.2%     -    1s
+     0     0 1894.89939    0  736 19066.0000 1894.89939  90.1%     -    1s
+     0     0 1897.64898    0  748 19066.0000 1897.64898  90.0%     -    1s
+     0     0 1902.21412    0  727 19066.0000 1902.21412  90.0%     -    1s
+     0     0 1903.23123    0  738 19066.0000 1903.23123  90.0%     -    1s
+     0     0 1921.10269    0  746 19066.0000 1921.10269  89.9%     -    1s
+     0     0 1921.10269    0  631 19066.0000 1921.10269  89.9%     -    1s
+     0     2 1921.10269    0  628 19066.0000 1921.10269  89.9%     -    1s
+H   31    35                    19001.000000 1973.93276  89.6%   305    3s
+H   70    74                    18982.000000 1973.93276  89.6%   186    4s
+H  105   115                    18966.000000 1973.93276  89.6%   153    4s
+H  139   156                    18960.000000 1973.93276  89.6%   130    4s
+H  149   156                    18955.000000 1973.93276  89.6%   126    4s
+H  185   188                    18791.000000 1973.93276  89.5%   109    4s
+H  187   196                    18713.000000 1973.93276  89.5%   108    4s
+   360   404 3110.00000   71  383 18713.0000 1973.93276  89.5%  65.8    5s
+* 2717  2673             410    18511.000000 1982.68232  89.3%  18.5    5s
+  2794  2737 18075.0000  481  599 18511.0000 2193.51535  88.2%  19.2   10s
+H 2804  2606                    17982.000000 2224.97034  87.6%  19.2   14s
+H 2806  2476                    17852.000000 2226.61181  87.5%  19.2   14s
+  2809  2478 12317.0000  216  636 17852.0000 2230.21394  87.5%  19.1   15s
+H 2813  2356                    17813.000000 2233.11530  87.5%  19.1   16s
+H 2813  2238                    17788.000000 2235.72162  87.4%  19.1   17s
+H 2819  2129                    17761.000000 2242.03300  87.4%  19.1   19s
+H 2819  2022                    17733.000000 2242.03300  87.4%  19.1   19s
+H 2822  1922                    17666.000000 2244.65338  87.3%  19.1   20s
+H 2826  1826                    17077.000000 2246.54324  86.8%  19.0   22s
+H 2831  1738                    16914.000000 2251.12707  86.7%  19.0   24s
+  2834  1740 3412.00000   62  683 16914.0000 2252.64848  86.7%  19.0   25s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:46:24 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6163 rows, 4030 columns and 23410 nonzeros
+Model fingerprint: 0xdff28e86
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2381 rows and 2273 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1760 columns, 11079 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1760 integer (1695 binary)
+
+Root relaxation: objective 1.646000e+03, 876 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1646.00000    0  663          - 1646.00000      -     -    0s
+     0     0 1664.75073    0  823          - 1664.75073      -     -    0s
+     0     0 1664.75073    0  818          - 1664.75073      -     -    0s
+     0     0 1679.28590    0  800          - 1679.28590      -     -    0s
+     0     0 1679.28590    0  795          - 1679.28590      -     -    0s
+     0     0 1692.96741    0  774          - 1692.96741      -     -    0s
+     0     0 1704.88162    0  746          - 1704.88162      -     -    0s
+     0     0 1726.03621    0  758          - 1726.03621      -     -    0s
+     0     0 1726.03621    0  755          - 1726.03621      -     -    0s
+     0     0 1760.88549    0  784          - 1760.88549      -     -    0s
+     0     0 1760.88549    0  785          - 1760.88549      -     -    0s
+     0     0 1788.95390    0  833          - 1788.95390      -     -    0s
+     0     0 1791.04457    0  812          - 1791.04457      -     -    0s
+     0     0 1795.75518    0  816          - 1795.75518      -     -    0s
+     0     0 1796.51080    0  813          - 1796.51080      -     -    0s
+     0     0 1843.92636    0  770          - 1843.92636      -     -    0s
+     0     0 1851.33850    0  781          - 1851.33850      -     -    0s
+     0     0 1853.26900    0  771          - 1853.26900      -     -    0s
+     0     0 1874.68343    0  727          - 1874.68343      -     -    0s
+     0     0 1875.31923    0  746          - 1875.31923      -     -    1s
+H    0     0                    19066.000000 1875.31923  90.2%     -    1s
+     0     0 1894.89939    0  736 19066.0000 1894.89939  90.1%     -    1s
+     0     0 1897.64898    0  748 19066.0000 1897.64898  90.0%     -    1s
+     0     0 1902.21412    0  727 19066.0000 1902.21412  90.0%     -    1s
+     0     0 1903.23123    0  738 19066.0000 1903.23123  90.0%     -    1s
+     0     0 1921.10269    0  746 19066.0000 1921.10269  89.9%     -    1s
+     0     0 1921.10269    0  631 19066.0000 1921.10269  89.9%     -    1s
+     0     2 1921.10269    0  628 19066.0000 1921.10269  89.9%     -    1s
+H   31    35                    19001.000000 1973.93276  89.6%   305    3s
+H   70    74                    18982.000000 1973.93276  89.6%   186    3s
+H  105   115                    18966.000000 1973.93276  89.6%   153    3s
+H  139   156                    18960.000000 1973.93276  89.6%   130    4s
+H  149   156                    18955.000000 1973.93276  89.6%   126    4s
+H  185   188                    18791.000000 1973.93276  89.5%   109    4s
+H  187   196                    18713.000000 1973.93276  89.5%   108    4s
+   890   972 7765.00000  156  109 18713.0000 1973.93276  89.5%  37.3    5s
+* 2717  2673             410    18511.000000 1982.68232  89.3%  18.5    5s
+  2793  2736 16621.0000  379  767 18511.0000 2179.62680  88.2%  19.3   10s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:47:51 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xd905728f
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 9.178000e+03, 901 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.04354    0   83          - 9178.04354      -     -    0s
+     0     0 9221.19950    0  111          - 9221.19950      -     -    0s
+     0     0 9226.80053    0  115          - 9226.80053      -     -    0s
+     0     0 9228.81856    0  115          - 9228.81856      -     -    0s
+     0     0 9246.90179    0   82          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    2s
+     0     2 9256.58562    0   82          - 9256.58562      -     -    2s
+* 2180  2200             388    19244.000000 9325.06897  51.5%   3.8    3s
+H 2204  2158                    19132.000000 9325.06897  51.3%   3.8    4s
+H 2205  2136                    18937.000000 9325.06897  50.8%   3.8    4s
+H 2209  2018                    18602.000000 9325.06897  49.9%   3.8    4s
+H 2213  1367                    15396.000000 9325.06897  39.4%   3.8    4s
+H 2321  1442                    15355.000000 9361.00000  39.0%   4.0    4s
+  2322  1443 11551.0000  116   82 15355.0000 9361.00000  39.0%   4.0    5s
+H 2324  1371                    14982.000000 9487.82488  36.7%   4.0    5s
+H 2326  1305                    14977.000000 9708.96183  35.2%   4.0    5s
+H 2341  1248                    14976.000000 10121.9220  32.4%   4.0    6s
+H 2348  1189                    14962.000000 10180.2632  32.0%   4.0    7s
+H 2349  1130                    14935.000000 10241.6762  31.4%   4.0    7s
+H 2354  1076                    14931.000000 10255.6940  31.3%   4.0    7s
+H 2355  1023                    14928.000000 10296.8763  31.0%   4.0    7s
+H 2364   977                    14926.000000 10411.7750  30.2%   4.0    8s
+H 2365   928                    14923.000000 10411.7750  30.2%   4.0    8s
+H 2374   886                    14912.000000 10523.3436  29.4%   4.0    9s
+H 2382   846                    14907.000000 10567.3575  29.1%   3.9    9s
+  2383   847 13332.0000  188  210 14907.0000 10580.1923  29.0%   3.9   10s
+H 2390   807                    14893.000000 10643.0374  28.5%   3.9   11s
+H 2406   778                    14890.000000 10701.9392  28.1%   7.7   13s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:50:41 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6163 rows, 4030 columns and 23410 nonzeros
+Model fingerprint: 0xf526f8b1
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 3e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2381 rows and 2273 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1760 columns, 11079 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1760 integer (1695 binary)
+
+Root relaxation: objective 1.646000e+03, 876 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1646.00000    0  663          - 1646.00000      -     -    0s
+     0     0 1664.75073    0  823          - 1664.75073      -     -    0s
+     0     0 1664.75073    0  818          - 1664.75073      -     -    0s
+     0     0 1679.28590    0  800          - 1679.28590      -     -    0s
+     0     0 1679.28590    0  795          - 1679.28590      -     -    0s
+     0     0 1692.96741    0  774          - 1692.96741      -     -    0s
+     0     0 1704.88162    0  746          - 1704.88162      -     -    0s
+     0     0 1726.03621    0  758          - 1726.03621      -     -    0s
+     0     0 1726.03621    0  755          - 1726.03621      -     -    0s
+     0     0 1760.88549    0  784          - 1760.88549      -     -    0s
+     0     0 1760.88549    0  785          - 1760.88549      -     -    0s
+     0     0 1788.95390    0  833          - 1788.95390      -     -    0s
+     0     0 1791.04457    0  812          - 1791.04457      -     -    0s
+     0     0 1795.75518    0  816          - 1795.75518      -     -    0s
+     0     0 1796.51080    0  813          - 1796.51080      -     -    0s
+     0     0 1843.92636    0  770          - 1843.92636      -     -    0s
+     0     0 1851.33850    0  781          - 1851.33850      -     -    0s
+     0     0 1853.26900    0  771          - 1853.26900      -     -    0s
+     0     0 1874.68343    0  727          - 1874.68343      -     -    1s
+     0     0 1875.31923    0  746          - 1875.31923      -     -    1s
+H    0     0                    19066.000000 1875.31923  90.2%     -    1s
+     0     0 1894.89939    0  736 19066.0000 1894.89939  90.1%     -    1s
+     0     0 1897.64898    0  748 19066.0000 1897.64898  90.0%     -    1s
+     0     0 1902.21412    0  727 19066.0000 1902.21412  90.0%     -    1s
+     0     0 1903.23123    0  738 19066.0000 1903.23123  90.0%     -    1s
+     0     0 1921.10269    0  746 19066.0000 1921.10269  89.9%     -    1s
+     0     0 1921.10269    0  631 19066.0000 1921.10269  89.9%     -    1s
+     0     2 1921.10269    0  628 19066.0000 1921.10269  89.9%     -    1s
+H   31    35                    19001.000000 1973.93276  89.6%   305    3s
+H   70    74                    18982.000000 1973.93276  89.6%   186    3s
+H  105   115                    18966.000000 1973.93276  89.6%   153    4s
+H  139   156                    18960.000000 1973.93276  89.6%   130    4s
+H  149   156                    18955.000000 1973.93276  89.6%   126    4s
+H  185   188                    18791.000000 1973.93276  89.5%   109    4s
+H  187   196                    18713.000000 1973.93276  89.5%   108    4s
+   603   652 5830.00000  108  160 18713.0000 1973.93276  89.5%  48.1    5s
+* 2717  2673             410    18511.000000 1982.68232  89.3%  18.5    5s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:51:00 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6163 rows, 4030 columns and 23410 nonzeros
+Model fingerprint: 0xf77bce62
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2381 rows and 2273 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1760 columns, 11079 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1760 integer (1695 binary)
+
+Root relaxation: objective 1.646000e+03, 876 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1646.00000    0  663          - 1646.00000      -     -    0s
+     0     0 1664.75073    0  823          - 1664.75073      -     -    0s
+     0     0 1664.75073    0  818          - 1664.75073      -     -    0s
+     0     0 1679.28590    0  800          - 1679.28590      -     -    0s
+     0     0 1679.28590    0  795          - 1679.28590      -     -    0s
+     0     0 1692.96741    0  774          - 1692.96741      -     -    0s
+     0     0 1704.88162    0  746          - 1704.88162      -     -    0s
+     0     0 1726.03621    0  758          - 1726.03621      -     -    0s
+     0     0 1726.03621    0  755          - 1726.03621      -     -    0s
+     0     0 1760.88549    0  784          - 1760.88549      -     -    0s
+     0     0 1760.88549    0  785          - 1760.88549      -     -    0s
+     0     0 1788.95390    0  833          - 1788.95390      -     -    0s
+     0     0 1791.04457    0  812          - 1791.04457      -     -    0s
+     0     0 1795.75518    0  816          - 1795.75518      -     -    0s
+     0     0 1796.51080    0  813          - 1796.51080      -     -    0s
+     0     0 1843.92636    0  770          - 1843.92636      -     -    0s
+     0     0 1851.33850    0  781          - 1851.33850      -     -    0s
+     0     0 1853.26900    0  771          - 1853.26900      -     -    0s
+     0     0 1874.68343    0  727          - 1874.68343      -     -    1s
+     0     0 1875.31923    0  746          - 1875.31923      -     -    1s
+H    0     0                    19066.000000 1875.31923  90.2%     -    1s
+     0     0 1894.89939    0  736 19066.0000 1894.89939  90.1%     -    1s
+     0     0 1897.64898    0  748 19066.0000 1897.64898  90.0%     -    1s
+     0     0 1902.21412    0  727 19066.0000 1902.21412  90.0%     -    1s
+     0     0 1903.23123    0  738 19066.0000 1903.23123  90.0%     -    1s
+     0     0 1921.10269    0  746 19066.0000 1921.10269  89.9%     -    1s
+     0     0 1921.10269    0  631 19066.0000 1921.10269  89.9%     -    1s
+     0     2 1921.10269    0  628 19066.0000 1921.10269  89.9%     -    1s
+H   31    35                    19001.000000 1973.93276  89.6%   305    3s
+H   70    74                    18982.000000 1973.93276  89.6%   186    4s
+H  105   115                    18966.000000 1973.93276  89.6%   153    4s
+H  139   156                    18960.000000 1973.93276  89.6%   130    4s
+H  149   156                    18955.000000 1973.93276  89.6%   126    4s
+H  185   188                    18791.000000 1973.93276  89.5%   109    4s
+H  187   196                    18713.000000 1973.93276  89.5%   108    5s
+* 2717  2673             410    18511.000000 1982.68232  89.3%  18.5    5s
+  2790  2734 3668.00000   48  741 18511.0000 2176.54502  88.2%  19.3   10s
+H 2804  2606                    17982.000000 2224.97034  87.6%  19.2   14s
+H 2806  2476                    17852.000000 2226.61181  87.5%  19.2   14s
+  2809  2478 12317.0000  216  636 17852.0000 2230.21394  87.5%  19.1   15s
+H 2813  2356                    17813.000000 2233.11530  87.5%  19.1   17s
+H 2813  2238                    17788.000000 2235.72162  87.4%  19.1   17s
+H 2819  2129                    17761.000000 2242.03300  87.4%  19.1   19s
+H 2819  2022                    17733.000000 2242.03300  87.4%  19.1   20s
+H 2822  1922                    17666.000000 2244.65338  87.3%  19.1   20s
+H 2826  1826                    17077.000000 2246.54324  86.8%  19.0   22s
+H 2831  1738                    16914.000000 2251.12707  86.7%  19.0   24s
+  2833  1739 10335.0000  204  709 16914.0000 2252.22667  86.7%  19.0   25s
+H 2835  1652                    16895.000000 2253.17773  86.7%  19.0   27s
+H 2844  1577                    16873.000000 2255.70645  86.6%  52.8   30s
+H 2846  1499                    16834.000000 2255.70645  86.6%  52.8   32s
+  2857  1506 8904.00000  177  755 16834.0000 2257.73395  86.6%  52.6   35s
+H 2857  1430                    16795.000000 2257.84328  86.6%  52.6   35s
+H 2858  1359                    16733.000000 2257.84328  86.5%  52.5   36s
+H 2858  1291                    16625.000000 2258.31847  86.4%  52.5   36s
+H 2861  1230                    16620.000000 2258.32771  86.4%  61.2   37s
+  2876  1247 2318.96804   24  682 16620.0000 2259.70859  86.4%  71.0   40s
+H 2899  1193                    16607.000000 2263.21923  86.4%  87.1   44s
+  2900  1201 2340.95723   25  658 16607.0000 2263.21923  86.4%  87.9   45s
+H 2932  1164                    16584.000000 2265.04220  86.3%   100   49s
+H 2933  1108                    16582.000000 2265.04220  86.3%   101   49s
+H 2939  1053                    16580.000000 2265.04802  86.3%   104   49s
+  2940  1061 2384.02474   28  621 16580.0000 2265.04802  86.3%   105   50s
+H 2965  1032                    16574.000000 2266.36021  86.3%   115   51s
+H 2976   981                    16568.000000 2266.36021  86.3%   119   51s
+H 3006   966                    16564.000000 2266.36021  86.3%   130   54s
+H 3010   920                    16563.000000 2266.36021  86.3%   131   54s
+H 3012   880                    16550.000000 2266.36021  86.3%   132   54s
+H 3018   847                    16505.000000 2266.36021  86.3%   133   60s
+H 3019   809                    16472.000000 2266.36021  86.2%   133   60s
+H 3020   774                    16462.000000 2266.36021  86.2%   134   60s
+H 3048   764                    16442.000000 2266.36021  86.2%   139   62s
+H 3049   732                    16413.000000 2266.36021  86.2%   139   62s
+H 3090   727                    16326.000000 2266.36021  86.1%   146   64s
+  3098   759 2712.09692   36  497 16326.0000 2266.36021  86.1%   147   65s
+  3785  1253 3259.80000   73  346 16326.0000 2266.36021  86.1%   152   70s
+  5116  2439 8290.00000  167  121 16326.0000 2266.36021  86.1%   121   75s
+H 5983  3042                    16321.000000 2266.36021  86.1%   106   77s
+  6554  3629 14640.0000  313   27 16321.0000 2266.36021  86.1%   100   80s
+H 6556  3629                    16309.000000 2266.36021  86.1%   100   80s
+H 6558  3629                    16306.000000 2266.36021  86.1%   100   80s
+H 6561  3629                    16274.000000 2266.36021  86.1%   100   80s
+H 6566  3629                    16273.000000 2266.36021  86.1%   100   80s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:52:27 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5965 rows, 4030 columns and 23212 nonzeros
+Model fingerprint: 0x0ef7dd41
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2183 rows and 2075 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1958 columns, 11475 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1958 integer (1893 binary)
+
+Root relaxation: objective 4.472852e+02, 1802 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  447.28520    0 1770          -  447.28520      -     -    0s
+     0     0 6641.77944    0  327          - 6641.77944      -     -    0s
+     0     0 6641.77959    0  182          - 6641.77959      -     -    0s
+H    0     0                    6988.0000000 6641.77959  4.95%     -    0s
+H    0     0                    6975.0000000 6646.76526  4.71%     -    0s
+     0     2 6646.76526    0  182 6975.00000 6646.76526  4.71%     -    1s
+H   97    96                    6957.0000000 6673.63595  4.07%  17.9    1s
+H 1050   863                    6955.0000000 6675.71558  4.02%  16.1    1s
+H 1053   821                    6950.0000000 6675.71558  3.95%  16.1    2s
+H 1053   780                    6947.0000000 6675.71558  3.91%  16.1    3s
+H 1056   743                    6940.0000000 6803.27216  1.97%  16.0    3s
+H 1062   709                    6918.0000000 6917.00018  0.01%  15.9    4s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:52:48 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5965 rows, 4030 columns and 23212 nonzeros
+Model fingerprint: 0xdc08c008
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2183 rows and 2075 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1958 columns, 11475 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1958 integer (1893 binary)
+
+Root relaxation: objective 4.484260e+02, 1802 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  448.42600    0 1770          -  448.42600      -     -    0s
+     0     0 7886.42074    0  428          - 7886.42074      -     -    0s
+H    0     0                    16441.000000 7886.42074  52.0%     -    0s
+     0     0 7899.51006    0  437 16441.0000 7899.51006  52.0%     -    0s
+     0     0 8028.86907    0  507 16441.0000 8028.86907  51.2%     -    1s
+     0     0 8028.86907    0  454 16441.0000 8028.86907  51.2%     -    1s
+     0     2 8028.86907    0  454 16441.0000 8028.86907  51.2%     -    8s
+H   62    65                    16422.000000 8028.86907  51.1%   164    9s
+H   90    95                    16152.000000 8028.86907  50.3%   141    9s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:53:25 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5995 rows, 4030 columns and 23242 nonzeros
+Model fingerprint: 0x3b100e37
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2213 rows and 2105 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1928 columns, 11415 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1928 integer (1863 binary)
+
+Root relaxation: objective 4.645490e+02, 1564 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  464.54900    0  661          -  464.54900      -     -    0s
+     0     0 7134.03110    0  396          - 7134.03110      -     -    0s
+     0     0 7136.04709    0  376          - 7136.04709      -     -    0s
+     0     0 7563.35263    0  363          - 7563.35263      -     -    1s
+     0     0 7590.08930    0  457          - 7590.08930      -     -    1s
+H    0     0                    17349.000000 7590.08930  56.3%     -    2s
+     0     0 7913.04297    0  452 17349.0000 7913.04297  54.4%     -    3s
+     0     0 7913.04297    0  444 17349.0000 7913.04297  54.4%     -    3s
+     0     2 7913.04297    0  444 17349.0000 7913.04297  54.4%     -    5s
+H   65    63                    16989.000000 7969.05150  53.1%   352    7s
+H   95    92                    16846.000000 7969.05150  52.7%   269    7s
+H   97    92                    16815.000000 7969.05150  52.6%   265    7s
+H   98    92                    16762.000000 7969.05150  52.5%   262    7s
+  1741  1670 8080.38827    6  466 16762.0000 8016.47943  52.2%  25.5   10s
+* 1837  1651             302    16417.000000 8016.47943  51.2%  24.3   10s
+* 1838  1649             301    16385.000000 8016.47943  51.1%  24.3   10s
+* 1851  1702             426    16241.000000 8016.47943  50.6%  24.7   10s
+* 1852  1700             425    16231.000000 8016.47943  50.6%  24.7   10s
+* 1936  1634             486    15305.000000 8016.47943  47.6%  24.9   10s
+H 1959  1554                    15239.000000 8016.47943  47.4%  26.3   15s
+H 1959  1476                    15189.000000 8016.47943  47.2%  26.3   15s
+H 1961  1403                    15180.000000 8181.15750  46.1%  26.3   18s
+  1967  1407 8223.49467   12  646 15180.0000 8223.49467  45.8%  26.2   20s
+H 1971  1339                    15172.000000 8257.30489  45.6%  26.2   21s
+H 1972  1272                    15150.000000 8259.73757  45.5%  26.1   22s
+H 1975  1210                    15125.000000 8268.22576  45.3%  26.1   23s
+H 1975  1149                    15100.000000 8268.22576  45.2%  26.1   23s
+H 1975  1091                    15045.000000 8268.22576  45.0%  26.1   23s
+H 1976  1038                    14997.000000 8276.03763  44.8%  26.1   24s
+H 1977   986                    14972.000000 8283.37924  44.7%  26.1   24s
+  1979   987 13874.5897  337  649 14972.0000 8285.05170  44.7%  26.1   25s
+H 1985   941                    14913.000000 8315.82683  44.2%  26.0   27s
+  1990   944 8329.85100   27  694 14913.0000 8327.78691  44.2%  25.9   30s
+H 1991   897                    14883.000000 8328.92725  44.0%  25.9   30s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 15:56:48 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xd905728f
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 9.178000e+03, 901 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.04354    0   83          - 9178.04354      -     -    0s
+     0     0 9221.19950    0  111          - 9221.19950      -     -    0s
+     0     0 9226.80053    0  115          - 9226.80053      -     -    0s
+     0     0 9228.81856    0  115          - 9228.81856      -     -    0s
+     0     0 9246.90179    0   82          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    2s
+     0     2 9256.58562    0   82          - 9256.58562      -     -    2s
+* 2180  2200             388    19244.000000 9325.06897  51.5%   3.8    3s
+H 2204  2158                    19132.000000 9325.06897  51.3%   3.8    4s
+H 2205  2136                    18937.000000 9325.06897  50.8%   3.8    4s
+H 2209  2018                    18602.000000 9325.06897  49.9%   3.8    4s
+H 2213  1367                    15396.000000 9325.06897  39.4%   3.8    4s
+H 2321  1442                    15355.000000 9361.00000  39.0%   4.0    4s
+  2322  1443 11551.0000  116   82 15355.0000 9361.00000  39.0%   4.0    5s
+H 2324  1371                    14982.000000 9487.82488  36.7%   4.0    5s
+H 2326  1305                    14977.000000 9708.96183  35.2%   4.0    5s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:09:37 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xd905728f
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 9.178000e+03, 901 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.04354    0   83          - 9178.04354      -     -    0s
+     0     0 9221.19950    0  111          - 9221.19950      -     -    0s
+     0     0 9226.80053    0  115          - 9226.80053      -     -    0s
+     0     0 9228.81856    0  115          - 9228.81856      -     -    0s
+     0     0 9246.90179    0   82          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    2s
+     0     2 9256.58562    0   82          - 9256.58562      -     -    2s
+* 2180  2200             388    19244.000000 9325.06897  51.5%   3.8    3s
+H 2204  2158                    19132.000000 9325.06897  51.3%   3.8    4s
+H 2205  2136                    18937.000000 9325.06897  50.8%   3.8    4s
+H 2209  2018                    18602.000000 9325.06897  49.9%   3.8    4s
+H 2213  1367                    15396.000000 9325.06897  39.4%   3.8    4s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:17:41 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xd905728f
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.05s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 9.178000e+03, 901 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.04354    0   83          - 9178.04354      -     -    0s
+     0     0 9221.19950    0  111          - 9221.19950      -     -    0s
+     0     0 9226.80053    0  115          - 9226.80053      -     -    0s
+     0     0 9228.81856    0  115          - 9228.81856      -     -    0s
+     0     0 9246.90179    0   82          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    2s
+H    0     0                    14974.000000 9256.58562  38.2%     -    3s
+
+Cutting planes:
+  Gomory: 5
+  MIR: 23
+
+Explored 1 nodes (1249 simplex iterations) in 3.99 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 14974 
+
+Solution limit reached
+Best objective 1.497400000000e+04, best bound 9.257000000000e+03, gap 38.1795%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:18:41 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5995 rows, 4030 columns and 23242 nonzeros
+Model fingerprint: 0x3b100e37
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2213 rows and 2105 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1928 columns, 11415 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1928 integer (1863 binary)
+
+Root relaxation: objective 4.645490e+02, 1564 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  464.54900    0  661          -  464.54900      -     -    0s
+     0     0 7134.03110    0  396          - 7134.03110      -     -    0s
+     0     0 7136.04709    0  376          - 7136.04709      -     -    0s
+     0     0 7563.35263    0  363          - 7563.35263      -     -    1s
+     0     0 7590.08930    0  457          - 7590.08930      -     -    1s
+H    0     0                    17349.000000 7590.08930  56.3%     -    2s
+     0     0 7913.04297    0  452 17349.0000 7913.04297  54.4%     -    3s
+     0     0 7913.04297    0  444 17349.0000 7913.04297  54.4%     -    3s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:20:05 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xd905728f
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.05s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 9.178000e+03, 901 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.00000    0   72          - 9178.00000      -     -    0s
+     0     0 9178.04354    0   83          - 9178.04354      -     -    0s
+     0     0 9221.19950    0  111          - 9221.19950      -     -    0s
+     0     0 9226.80053    0  115          - 9226.80053      -     -    0s
+     0     0 9228.81856    0  115          - 9228.81856      -     -    0s
+     0     0 9246.90179    0   82          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9246.90179    0   84          - 9246.90179      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    0s
+     0     0 9255.58562    0   82          - 9255.58562      -     -    2s
+H    0     0                    14974.000000 9256.58562  38.2%     -    3s
+
+Cutting planes:
+  Gomory: 5
+  MIR: 23
+
+Explored 1 nodes (1249 simplex iterations) in 3.64 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 14974 
+
+Solution limit reached
+Best objective 1.497400000000e+04, best bound 9.257000000000e+03, gap 38.1795%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:20:12 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5995 rows, 4030 columns and 23242 nonzeros
+Model fingerprint: 0x3b100e37
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2213 rows and 2105 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1928 columns, 11415 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1928 integer (1863 binary)
+
+Root relaxation: objective 4.645490e+02, 1564 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  464.54900    0  661          -  464.54900      -     -    0s
+     0     0 7134.03110    0  396          - 7134.03110      -     -    0s
+     0     0 7136.04709    0  376          - 7136.04709      -     -    0s
+     0     0 7563.35263    0  363          - 7563.35263      -     -    1s
+     0     0 7590.08930    0  457          - 7590.08930      -     -    1s
+H    0     0                    17349.000000 7590.08930  56.3%     -    2s
+     0     0 7913.04297    0  452 17349.0000 7913.04297  54.4%     -    3s
+     0     0 7913.04297    0  444 17349.0000 7913.04297  54.4%     -    3s
+     0     2 7913.04297    0  444 17349.0000 7913.04297  54.4%     -    6s
+H   65    63                    16989.000000 7969.05150  53.1%   352    6s
+H   95    92                    16846.000000 7969.05150  52.7%   269    7s
+H   97    92                    16815.000000 7969.05150  52.6%   265    7s
+H   98    92                    16762.000000 7969.05150  52.5%   262    7s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:21:05 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5965 rows, 4030 columns and 23212 nonzeros
+Model fingerprint: 0xdc08c008
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2183 rows and 2075 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1958 columns, 11475 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1958 integer (1893 binary)
+
+Root relaxation: objective 4.484260e+02, 1802 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  448.42600    0 1770          -  448.42600      -     -    0s
+     0     0 7886.42074    0  428          - 7886.42074      -     -    0s
+H    0     0                    16441.000000 7886.42074  52.0%     -    0s
+     0     0 7899.51006    0  437 16441.0000 7899.51006  52.0%     -    0s
+     0     0 8028.86907    0  507 16441.0000 8028.86907  51.2%     -    1s
+     0     0 8028.86907    0  454 16441.0000 8028.86907  51.2%     -    1s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:21:14 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6163 rows, 4030 columns and 23410 nonzeros
+Model fingerprint: 0xdff28e86
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2381 rows and 2273 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1760 columns, 11079 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1760 integer (1695 binary)
+
+Root relaxation: objective 1.646000e+03, 876 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1646.00000    0  663          - 1646.00000      -     -    0s
+     0     0 1664.75073    0  823          - 1664.75073      -     -    0s
+     0     0 1664.75073    0  818          - 1664.75073      -     -    0s
+     0     0 1679.28590    0  800          - 1679.28590      -     -    0s
+     0     0 1679.28590    0  795          - 1679.28590      -     -    0s
+     0     0 1692.96741    0  774          - 1692.96741      -     -    0s
+     0     0 1704.88162    0  746          - 1704.88162      -     -    0s
+     0     0 1726.03621    0  758          - 1726.03621      -     -    0s
+     0     0 1726.03621    0  755          - 1726.03621      -     -    0s
+     0     0 1760.88549    0  784          - 1760.88549      -     -    0s
+     0     0 1760.88549    0  785          - 1760.88549      -     -    0s
+     0     0 1788.95390    0  833          - 1788.95390      -     -    0s
+     0     0 1791.04457    0  812          - 1791.04457      -     -    0s
+     0     0 1795.75518    0  816          - 1795.75518      -     -    0s
+     0     0 1796.51080    0  813          - 1796.51080      -     -    0s
+     0     0 1843.92636    0  770          - 1843.92636      -     -    0s
+     0     0 1851.33850    0  781          - 1851.33850      -     -    0s
+     0     0 1853.26900    0  771          - 1853.26900      -     -    0s
+     0     0 1874.68343    0  727          - 1874.68343      -     -    1s
+     0     0 1875.31923    0  746          - 1875.31923      -     -    1s
+H    0     0                    19066.000000 1875.31923  90.2%     -    1s
+     0     0 1894.89939    0  736 19066.0000 1894.89939  90.1%     -    1s
+
+Cutting planes:
+  MIR: 300
+  Zero half: 40
+  RLT: 117
+
+Explored 1 nodes (6455 simplex iterations) in 1.09 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 19066 
+
+Solution limit reached
+Best objective 1.906600000000e+04, best bound 1.895000000000e+03, gap 90.0608%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:23:54 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5965 rows, 4030 columns and 23212 nonzeros
+Model fingerprint: 0xdc08c008
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2183 rows and 2075 columns
+Presolve time: 0.05s
+Presolved: 3785 rows, 1958 columns, 11475 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1958 integer (1893 binary)
+
+Root relaxation: objective 4.484260e+02, 1802 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  448.42600    0 1770          -  448.42600      -     -    0s
+     0     0 7886.42074    0  428          - 7886.42074      -     -    0s
+H    0     0                    16441.000000 7886.42074  52.0%     -    0s
+     0     0 7899.51006    0  437 16441.0000 7899.51006  52.0%     -    0s
+     0     0 8028.86907    0  507 16441.0000 8028.86907  51.2%     -    1s
+     0     0 8028.86907    0  454 16441.0000 8028.86907  51.2%     -    1s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:24:11 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 5965 rows, 4030 columns and 23212 nonzeros
+Model fingerprint: 0xdc08c008
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2183 rows and 2075 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1958 columns, 11475 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1958 integer (1893 binary)
+
+Root relaxation: objective 4.484260e+02, 1802 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  448.42600    0 1770          -  448.42600      -     -    0s
+     0     0 7886.42074    0  428          - 7886.42074      -     -    0s
+H    0     0                    16441.000000 7886.42074  52.0%     -    0s
+     0     0 7899.51006    0  437 16441.0000 7899.51006  52.0%     -    0s
+
+Cutting planes:
+  MIR: 5
+  Zero half: 3
+
+Explored 1 nodes (4148 simplex iterations) in 0.79 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 16441 
+
+Solution limit reached
+Best objective 1.644100000000e+04, best bound 7.900000000000e+03, gap 51.9494%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:25:42 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0x068a7d5d
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.758000e+03, 835 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1758.00000    0  727          - 1758.00000      -     -    0s
+     0     0 1808.00000    0  782          - 1808.00000      -     -    0s
+     0     0 1808.00000    0  796          - 1808.00000      -     -    0s
+     0     0 1808.00000    0  797          - 1808.00000      -     -    0s
+     0     0 1833.74516    0  835          - 1833.74516      -     -    0s
+     0     0 1855.18432    0  808          - 1855.18432      -     -    0s
+     0     0 1855.18432    0  807          - 1855.18432      -     -    0s
+     0     0 1898.56870    0  790          - 1898.56870      -     -    0s
+     0     0 1898.56870    0  793          - 1898.56870      -     -    0s
+H    0     0                    19059.000000 1898.56870  90.0%     -    0s
+     0     0 1931.69049    0  803 19059.0000 1931.69049  89.9%     -    0s
+
+Cutting planes:
+  MIR: 178
+  Zero half: 112
+  RLT: 89
+
+Explored 1 nodes (4583 simplex iterations) in 0.89 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 19059 
+
+Solution limit reached
+Best objective 1.905900000000e+04, best bound 1.932000000000e+03, gap 89.8631%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:25:43 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0x4688e0ac
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.708000e+03, 834 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1708.00000    0  645          - 1708.00000      -     -    0s
+     0     0 1708.00678    0  792          - 1708.00678      -     -    0s
+     0     0 1708.00678    0  806          - 1708.00678      -     -    0s
+     0     0 1726.00437    0  782          - 1726.00437      -     -    0s
+     0     0 1726.00457    0  788          - 1726.00457      -     -    0s
+     0     0 1756.61733    0  789          - 1756.61733      -     -    0s
+     0     0 1794.43684    0  780          - 1794.43684      -     -    0s
+     0     0 1794.44825    0  781          - 1794.44825      -     -    0s
+     0     0 1846.75777    0  762          - 1846.75777      -     -    0s
+     0     0 1849.05714    0  765          - 1849.05714      -     -    0s
+     0     0 1851.95649    0  778          - 1851.95649      -     -    0s
+     0     0 1852.17794    0  760          - 1852.17794      -     -    0s
+     0     0 1900.29871    0  756          - 1900.29871      -     -    1s
+     0     0 1902.70876    0  751          - 1902.70876      -     -    1s
+     0     0 1904.07081    0  759          - 1904.07081      -     -    1s
+H    0     0                    19307.000000 1904.07081  90.1%     -    1s
+     0     0 1938.91343    0  763 19307.0000 1938.91343  90.0%     -    1s
+
+Cutting planes:
+  MIR: 344
+  StrongCG: 1
+  Zero half: 58
+  RLT: 143
+
+Explored 1 nodes (5343 simplex iterations) in 1.12 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 19307 
+
+Solution limit reached
+Best objective 1.930700000000e+04, best bound 1.939000000000e+03, gap 89.9570%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:25:45 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xb6ee3974
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.887000e+03, 848 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1887.00000    0  643          - 1887.00000      -     -    0s
+     0     0 1887.00133    0  675          - 1887.00133      -     -    0s
+     0     0 1917.11860    0  691          - 1917.11860      -     -    0s
+     0     0 1917.11860    0  692          - 1917.11860      -     -    0s
+     0     0 1960.58202    0  709          - 1960.58202      -     -    0s
+     0     0 1982.51588    0  716          - 1982.51588      -     -    0s
+     0     0 1982.51588    0  717          - 1982.51588      -     -    0s
+     0     0 2028.20789    0  726          - 2028.20789      -     -    0s
+     0     0 2035.01334    0  743          - 2035.01334      -     -    0s
+     0     0 2035.04212    0  737          - 2035.04212      -     -    0s
+     0     0 2075.29630    0  731          - 2075.29630      -     -    0s
+     0     0 2078.48332    0  740          - 2078.48332      -     -    0s
+     0     0 2079.70383    0  739          - 2079.70383      -     -    0s
+     0     0 2123.07301    0  679          - 2123.07301      -     -    0s
+     0     0 2128.09185    0  737          - 2128.09185      -     -    1s
+     0     0 2128.81936    0  721          - 2128.81936      -     -    1s
+     0     0 2157.55853    0  694          - 2157.55853      -     -    1s
+H    0     0                    18477.000000 2157.55853  88.3%     -    1s
+     0     0 2160.93801    0  723 18477.0000 2160.93801  88.3%     -    1s
+
+Cutting planes:
+  MIR: 224
+  Zero half: 34
+  RLT: 81
+
+Explored 1 nodes (6906 simplex iterations) in 1.13 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 18477 
+
+Solution limit reached
+Best objective 1.847700000000e+04, best bound 2.161000000000e+03, gap 88.3044%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:25:46 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xf3d3b3c2
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.885000e+03, 868 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1885.00000    0  749          - 1885.00000      -     -    0s
+     0     0 1885.00000    0  734          - 1885.00000      -     -    0s
+     0     0 1940.72788    0  725          - 1940.72788      -     -    0s
+     0     0 1940.72788    0  724          - 1940.72788      -     -    0s
+     0     0 2022.96690    0  726          - 2022.96690      -     -    0s
+     0     0 2030.42618    0  723          - 2030.42618      -     -    0s
+     0     0 2031.05472    0  714          - 2031.05472      -     -    0s
+     0     0 2106.10612    0  750          - 2106.10612      -     -    0s
+     0     0 2106.10612    0  763          - 2106.10612      -     -    0s
+     0     0 2167.58306    0  799          - 2167.58306      -     -    0s
+     0     0 2167.74902    0  806          - 2167.74902      -     -    0s
+     0     0 2200.86915    0  805          - 2200.86915      -     -    0s
+     0     0 2205.06776    0  801          - 2205.06776      -     -    0s
+     0     0 2205.30163    0  805          - 2205.30163      -     -    0s
+H    0     0                    18174.000000 2205.30163  87.9%     -    0s
+
+Cutting planes:
+  MIR: 479
+  StrongCG: 1
+  Zero half: 20
+  RLT: 88
+
+Explored 1 nodes (6342 simplex iterations) in 0.88 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 18174 
+
+Solution limit reached
+Best objective 1.817400000000e+04, best bound 2.206000000000e+03, gap 87.8618%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:25:47 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xae47797b
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.764000e+03, 832 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1764.00000    0  647          - 1764.00000      -     -    0s
+     0     0 1764.00000    0  753          - 1764.00000      -     -    0s
+     0     0 1777.00785    0  716          - 1777.00785      -     -    0s
+     0     0 1807.00000    0  725          - 1807.00000      -     -    0s
+     0     0 1809.97419    0  749          - 1809.97419      -     -    0s
+     0     0 1827.96930    0  752          - 1827.96930      -     -    0s
+     0     0 1827.96930    0  749          - 1827.96930      -     -    0s
+     0     0 1860.55287    0  754          - 1860.55287      -     -    0s
+     0     0 1860.95565    0  772          - 1860.95565      -     -    0s
+     0     0 1873.09208    0  758          - 1873.09208      -     -    0s
+     0     0 1875.41034    0  789          - 1875.41034      -     -    0s
+     0     0 1877.41892    0  783          - 1877.41892      -     -    0s
+     0     0 1877.42707    0  784          - 1877.42707      -     -    0s
+H    0     0                    18272.000000 1877.42707  89.7%     -    1s
+     0     0 1914.23533    0  705 18272.0000 1914.23533  89.5%     -    1s
+
+Cutting planes:
+  MIR: 201
+  StrongCG: 2
+  Zero half: 129
+  RLT: 124
+
+Explored 1 nodes (7251 simplex iterations) in 1.08 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 18272 
+
+Solution limit reached
+Best objective 1.827200000000e+04, best bound 1.915000000000e+03, gap 89.5195%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:25:48 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6219 rows, 4030 columns and 23479 nonzeros
+Model fingerprint: 0xa94f2ab0
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2437 rows and 2318 columns
+Presolve time: 0.03s
+Presolved: 3782 rows, 1712 columns, 10864 nonzeros
+Variable types: 0 continuous, 1712 integer (1650 binary)
+
+Root relaxation: objective 2.004000e+03, 958 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2004.00000    0  913          - 2004.00000      -     -    0s
+     0     0 2042.00000    0  978          - 2042.00000      -     -    0s
+     0     0 2114.55906    0  908          - 2114.55906      -     -    0s
+     0     0 2114.55906    0  908          - 2114.55906      -     -    0s
+     0     0 2172.81118    0  891          - 2172.81118      -     -    0s
+     0     0 2194.66310    0  894          - 2194.66310      -     -    0s
+     0     0 2195.05764    0  896          - 2195.05764      -     -    0s
+     0     0 2195.05764    0  896          - 2195.05764      -     -    0s
+     0     0 2257.23555    0  932          - 2257.23555      -     -    0s
+     0     0 2258.51634    0  930          - 2258.51634      -     -    0s
+     0     0 2258.54981    0  939          - 2258.54981      -     -    0s
+     0     0 2318.39927    0  875          - 2318.39927      -     -    0s
+     0     0 2324.43007    0  888          - 2324.43007      -     -    0s
+     0     0 2325.63170    0  905          - 2325.63170      -     -    0s
+     0     0 2325.66890    0  892          - 2325.66890      -     -    0s
+     0     0 2328.48031    0  893          - 2328.48031      -     -    0s
+     0     0 2333.73656    0  904          - 2333.73656      -     -    0s
+     0     0 2335.63873    0  903          - 2335.63873      -     -    0s
+     0     0 2336.43409    0  890          - 2336.43409      -     -    0s
+     0     0 2336.87183    0  892          - 2336.87183      -     -    0s
+H    0     0                    18986.000000 2336.87183  87.7%     -    0s
+
+Cutting planes:
+  MIR: 438
+  Zero half: 32
+  RLT: 94
+
+Explored 1 nodes (5266 simplex iterations) in 0.72 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 18986 
+
+Solution limit reached
+Best objective 1.898600000000e+04, best bound 2.337000000000e+03, gap 87.6909%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:25:49 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xd3ae1e20
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.908000e+03, 816 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1908.00000    0  597          - 1908.00000      -     -    0s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:27:00 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0x068a7d5d
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.758000e+03, 835 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1758.00000    0  727          - 1758.00000      -     -    0s
+     0     0 1808.00000    0  782          - 1808.00000      -     -    0s
+     0     0 1808.00000    0  796          - 1808.00000      -     -    0s
+     0     0 1808.00000    0  797          - 1808.00000      -     -    0s
+     0     0 1833.74516    0  835          - 1833.74516      -     -    0s
+     0     0 1855.18432    0  808          - 1855.18432      -     -    0s
+     0     0 1855.18432    0  807          - 1855.18432      -     -    0s
+     0     0 1898.56870    0  790          - 1898.56870      -     -    0s
+     0     0 1898.56870    0  793          - 1898.56870      -     -    0s
+H    0     0                    19059.000000 1898.56870  90.0%     -    0s
+     0     0 1931.69049    0  803 19059.0000 1931.69049  89.9%     -    0s
+
+Cutting planes:
+  MIR: 178
+  Zero half: 112
+  RLT: 89
+
+Explored 1 nodes (4583 simplex iterations) in 0.89 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 19059 
+
+Solution limit reached
+Best objective 1.905900000000e+04, best bound 1.932000000000e+03, gap 89.8631%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:27:01 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0x4688e0ac
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.708000e+03, 834 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1708.00000    0  645          - 1708.00000      -     -    0s
+     0     0 1708.00678    0  792          - 1708.00678      -     -    0s
+     0     0 1708.00678    0  806          - 1708.00678      -     -    0s
+     0     0 1726.00437    0  782          - 1726.00437      -     -    0s
+     0     0 1726.00457    0  788          - 1726.00457      -     -    0s
+     0     0 1756.61733    0  789          - 1756.61733      -     -    0s
+     0     0 1794.43684    0  780          - 1794.43684      -     -    0s
+     0     0 1794.44825    0  781          - 1794.44825      -     -    0s
+     0     0 1846.75777    0  762          - 1846.75777      -     -    0s
+     0     0 1849.05714    0  765          - 1849.05714      -     -    0s
+     0     0 1851.95649    0  778          - 1851.95649      -     -    0s
+     0     0 1852.17794    0  760          - 1852.17794      -     -    0s
+     0     0 1900.29871    0  756          - 1900.29871      -     -    0s
+     0     0 1902.70876    0  751          - 1902.70876      -     -    0s
+     0     0 1904.07081    0  759          - 1904.07081      -     -    0s
+H    0     0                    19307.000000 1904.07081  90.1%     -    1s
+     0     0 1938.91343    0  763 19307.0000 1938.91343  90.0%     -    1s
+
+Cutting planes:
+  MIR: 344
+  StrongCG: 1
+  Zero half: 58
+  RLT: 143
+
+Explored 1 nodes (5343 simplex iterations) in 1.07 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 19307 
+
+Solution limit reached
+Best objective 1.930700000000e+04, best bound 1.939000000000e+03, gap 89.9570%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:27:02 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xb6ee3974
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.887000e+03, 848 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1887.00000    0  643          - 1887.00000      -     -    0s
+     0     0 1887.00133    0  675          - 1887.00133      -     -    0s
+     0     0 1917.11860    0  691          - 1917.11860      -     -    0s
+     0     0 1917.11860    0  692          - 1917.11860      -     -    0s
+     0     0 1960.58202    0  709          - 1960.58202      -     -    0s
+     0     0 1982.51588    0  716          - 1982.51588      -     -    0s
+     0     0 1982.51588    0  717          - 1982.51588      -     -    0s
+     0     0 2028.20789    0  726          - 2028.20789      -     -    0s
+     0     0 2035.01334    0  743          - 2035.01334      -     -    0s
+     0     0 2035.04212    0  737          - 2035.04212      -     -    0s
+     0     0 2075.29630    0  731          - 2075.29630      -     -    0s
+     0     0 2078.48332    0  740          - 2078.48332      -     -    0s
+     0     0 2079.70383    0  739          - 2079.70383      -     -    0s
+     0     0 2123.07301    0  679          - 2123.07301      -     -    0s
+     0     0 2128.09185    0  737          - 2128.09185      -     -    0s
+     0     0 2128.81936    0  721          - 2128.81936      -     -    0s
+     0     0 2157.55853    0  694          - 2157.55853      -     -    1s
+H    0     0                    18477.000000 2157.55853  88.3%     -    1s
+     0     0 2160.93801    0  723 18477.0000 2160.93801  88.3%     -    1s
+
+Cutting planes:
+  MIR: 224
+  Zero half: 34
+  RLT: 81
+
+Explored 1 nodes (6906 simplex iterations) in 1.09 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 18477 
+
+Solution limit reached
+Best objective 1.847700000000e+04, best bound 2.161000000000e+03, gap 88.3044%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:27:03 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0xf3d3b3c2
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.03s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:29:01 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6193 rows, 4030 columns and 23440 nonzeros
+Model fingerprint: 0x068a7d5d
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2411 rows and 2303 columns
+Presolve time: 0.04s
+Presolved: 3785 rows, 1730 columns, 11019 nonzeros
+Presolved model has 2 SOS constraint(s)
+Variable types: 0 continuous, 1730 integer (1665 binary)
+
+Root relaxation: objective 1.758000e+03, 835 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1758.00000    0  727          - 1758.00000      -     -    0s
+     0     0 1808.00000    0  782          - 1808.00000      -     -    0s
+     0     0 1808.00000    0  796          - 1808.00000      -     -    0s
+     0     0 1808.00000    0  797          - 1808.00000      -     -    0s
+     0     0 1833.74516    0  835          - 1833.74516      -     -    0s
+     0     0 1855.18432    0  808          - 1855.18432      -     -    0s
+     0     0 1855.18432    0  807          - 1855.18432      -     -    0s
+     0     0 1898.56870    0  790          - 1898.56870      -     -    0s
+     0     0 1898.56870    0  793          - 1898.56870      -     -    0s
+H    0     0                    19059.000000 1898.56870  90.0%     -    0s
+     0     0 1931.69049    0  803 19059.0000 1931.69049  89.9%     -    0s
+
+Cutting planes:
+  MIR: 178
+  Zero half: 112
+  RLT: 89
+
+Explored 1 nodes (4583 simplex iterations) in 0.83 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 19059 
+
+Solution limit reached
+Best objective 1.905900000000e+04, best bound 1.932000000000e+03, gap 89.8631%
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:29:02 2021
+
+Academic license - for non-commercial use only - expires 2022-09-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 6201 rows, 4030 columns and 23452 nonzeros
+Model fingerprint: 0x4b0b1260
+Model has 62 quadratic constraints
+Variable types: 0 continuous, 4030 integer (3906 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+05]
+Presolve removed 2419 rows and 2309 columns
+Presolve time: 0.03s
+Presolved: 3782 rows, 1721 columns, 10882 nonzeros
+Variable types: 0 continuous, 1721 integer (1659 binary)
+
+Root relaxation: objective 1.293000e+03, 953 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1293.00000    0  905          - 1293.00000      -     -    0s
+     0     0 1332.00000    0  887          - 1332.00000      -     -    0s
+     0     0 1446.42096    0  803          - 1446.42096      -     -    0s
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:29:10 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:30:55 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:30:56 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:30:58 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:30:59 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:00 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:01 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:03 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:04 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:06 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:07 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:07 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:08 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:09 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:10 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:11 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:12 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:14 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:14 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:15 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:16 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:17 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:18 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:19 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:20 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:21 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:22 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:23 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:24 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:51 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:52 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:53 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:54 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:55 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:56 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:58 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:31:59 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:32:01 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:32:02 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:32:03 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:32:04 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:32:05 2021
+
+
+Gurobi 9.1.2 (mac64, C++) logging started Wed Oct  6 16:32:06 2021
+
