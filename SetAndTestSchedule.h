@@ -71,6 +71,7 @@ public:
     pair<list<int>, double> BFSCBBsolve(Vb prec, Vb child, Vd s, Vd t, bool print);
     pair<list<int>, double> localSearch(Vb prec, Vb child, Vd s, Vd t, bool print);
     pair<list<int>, double> BFSCBBGuSolve(Vb prec, Vb child, Vd s, Vd t, bool print);
+    double computeWithSetSeq(Vi seq, Vb prec, Vb child, Vd s, Vd t);
 };
 
 #endif

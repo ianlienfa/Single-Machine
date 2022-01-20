@@ -1,11 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <climits>
 #include <queue>
 #include "Uheap.h"
 #include "SetAndTestSchedule.h"
 #include "Q_ELEMENT.h"
-#include "relax_gurobi.h"
+// #include "relax_gurobi.h"
 #include "PriorityQueue.h"
 using namespace std;
 typedef struct Q_ELEMENT E;
@@ -913,115 +914,115 @@ pair<list<int>, double> SetAndTestSchedule::BFSCBBsolve(Vb prec, Vb child, Vd s,
     return make_pair(min_seq, min);
 }
 
-// cyclic-BFS + Branch-and-Bound + gurobi
-pair<list<int>, double> SetAndTestSchedule::BFSCBBGuSolve(Vb prec, Vb child, Vd s, Vd t, bool print)
-{
-    //init
-    this->s = s;
-    this->t = t;
-    this->prec = prec;
-    this->child = child;
+// // cyclic-BFS + Branch-and-Bound + gurobi
+// pair<list<int>, double> SetAndTestSchedule::BFSCBBGuSolve(Vb prec, Vb child, Vd s, Vd t, bool print)
+// {
+//     //init
+//     this->s = s;
+//     this->t = t;
+//     this->prec = prec;
+//     this->child = child;
 
-    // BST generate permutations, here we don't need c
-    vector<PriorityQueue<E>> contour;
+//     // BST generate permutations, here we don't need c
+//     vector<PriorityQueue<E>> contour;
     
-    // each level has one contour(priority queue)
-    contour.assign(Tn+Sn+1, PriorityQueue<E>([](const E &e1, const E &e2){return e1.lb < e2.lb;}));
+//     // each level has one contour(priority queue)
+//     contour.assign(Tn+Sn+1, PriorityQueue<E>([](const E &e1, const E &e2){return e1.lb < e2.lb;}));
     
-    // PriorityQueue<E> q([](const E &e1, const E &e2){return e1.lb < e2.lb;});
-    contour[0].push(E(B(0), Vi(), 0));  // dummy job
+//     // PriorityQueue<E> q([](const E &e1, const E &e2){return e1.lb < e2.lb;});
+//     contour[0].push(E(B(0), Vi(), 0));  // dummy job
     
-    // incumbent solution init
-    long long sz = 1, lv = 0;
-    double min = INT_MAX;    
-    list<int> min_seq;
-    B levelVisited; levelVisited.set();     // levelvisited = 1111....1111, 用levelvisited來記錄每個contour是否為空
-    B mask(0); mask.flip(); mask >>= (mask.size() - (Sn+ 1));    // mask用來去掉不合理的level, a dummy level-0 is required
-    cout << mask << endl;
+//     // incumbent solution init
+//     long long sz = 1, lv = 0;
+//     double min = INT_MAX;    
+//     list<int> min_seq;
+//     B levelVisited; levelVisited.set();     // levelvisited = 1111....1111, 用levelvisited來記錄每個contour是否為空
+//     B mask(0); mask.flip(); mask >>= (mask.size() - (Sn+ 1));    // mask用來去掉不合理的level, a dummy level-0 is required
+//     cout << mask << endl;
 
-    // param for debug
-    unsigned long long cycle = 0;
+//     // param for debug
+//     unsigned long long cycle = 0;
 
-    while((levelVisited & mask).any())  // if there exists node unvisited...
-    {
-        for(int level = 0; level <= Sn; level++)    // level-0 well only be visit once, since after the dummy element is removed, the size will remain at 0
-        {
-            if(contour[level].size())
-            {
-                E e = contour[level].top();
-                contour[level].extract();  
+//     while((levelVisited & mask).any())  // if there exists node unvisited...
+//     {
+//         for(int level = 0; level <= Sn; level++)    // level-0 well only be visit once, since after the dummy element is removed, the size will remain at 0
+//         {
+//             if(contour[level].size())
+//             {
+//                 E e = contour[level].top();
+//                 contour[level].extract();  
 
-                if(debug)
-                {                    
-                    printf("\nset job seq: "); for(auto it: e.seq) printf("%d, ", it); printf("\n");
-                    printf("E: "); cout << e << endl;
-                }
+//                 if(debug)
+//                 {                    
+//                     printf("\nset job seq: "); for(auto it: e.seq) printf("%d, ", it); printf("\n");
+//                     printf("E: "); cout << e << endl;
+//                 }
 
-                // for each permutation, solve it by Uheap
-                if(e.seq.size() == Sn)
-                {
-                    if(debug) 
-                    {
-                        printf("\n\nnew complete seq starts.\n");
-                        printf("set job seq: "); for(auto it: e.seq) printf("%d, ", it); printf("\n");
-                    }
-                    Uheap hp = toUheap(e.seq, prec, child, s, t);
-                    // hp.debug = true;
-                    list<int> v = hp.find_seq();
-                    double ans = computeSeq(v);
-                    if(ans < min)
-                    {
-                        if(debug) printf("ans: %.2f, min: %.2f\n", ans, min);
-                        min = ans;
-                        min_seq = v;
-                        printf("now min: %.1f\n", min);
-                        for(auto it: min_seq)
-                        cout << it << ", " ; cout << endl << endl;
-                    }
-                    continue;
-                }
+//                 // for each permutation, solve it by Uheap
+//                 if(e.seq.size() == Sn)
+//                 {
+//                     if(debug) 
+//                     {
+//                         printf("\n\nnew complete seq starts.\n");
+//                         printf("set job seq: "); for(auto it: e.seq) printf("%d, ", it); printf("\n");
+//                     }
+//                     Uheap hp = toUheap(e.seq, prec, child, s, t);
+//                     // hp.debug = true;
+//                     list<int> v = hp.find_seq();
+//                     double ans = computeSeq(v);
+//                     if(ans < min)
+//                     {
+//                         if(debug) printf("ans: %.2f, min: %.2f\n", ans, min);
+//                         min = ans;
+//                         min_seq = v;
+//                         printf("now min: %.1f\n", min);
+//                         for(auto it: min_seq)
+//                         cout << it << ", " ; cout << endl << endl;
+//                     }
+//                     continue;
+//                 }
 
         
-                // branch
-                for(int i = 1; i <= Sn; i++)
-                {
-                    // 現在node還沒去過的地方
-                    // branching: move forward one more job
-                    // compute the lower bound of the sequence and then push the node into the next level contour(priority queue)
-                    if(!e.visited.test(i))  // if this set up job is not yet sequenced
-                    {
-                        Vi v_in(e.seq);
-                        v_in.push_back(i);
-                        E topush = E((B(e.visited).set(i)), v_in, 0);
+//                 // branch
+//                 for(int i = 1; i <= Sn; i++)
+//                 {
+//                     // 現在node還沒去過的地方
+//                     // branching: move forward one more job
+//                     // compute the lower bound of the sequence and then push the node into the next level contour(priority queue)
+//                     if(!e.visited.test(i))  // if this set up job is not yet sequenced
+//                     {
+//                         Vi v_in(e.seq);
+//                         v_in.push_back(i);
+//                         E topush = E((B(e.visited).set(i)), v_in, 0);
 
-                        // Gurobi compute lb
-                        topush.lb = Relax_Gurobi::relax_lb(child, s, t, v_in);            
+//                         // Gurobi compute lb
+//                         topush.lb = Relax_Gurobi::relax_lb(child, s, t, v_in);            
 
-                        // prune, lb如果比現在最好還糟就不要塞了                        
-                        if(topush.lb <= min)
-                        {
-                            if(debug) cout << "topush: " << topush << endl;
-                            contour[level+1].push(topush);      
-                        }                                     
-                    }
-                }
-            }
-            else
-            levelVisited.set(level, 0);
-        }        
-        cycle++;
+//                         // prune, lb如果比現在最好還糟就不要塞了                        
+//                         if(topush.lb <= min)
+//                         {
+//                             if(debug) cout << "topush: " << topush << endl;
+//                             contour[level+1].push(topush);      
+//                         }                                     
+//                     }
+//                 }
+//             }
+//             else
+//             levelVisited.set(level, 0);
+//         }        
+//         cycle++;
         
-    }
+//     }
 
-    if(print)
-    {
-        printf("optimal seq:");
-        for(auto it: min_seq) printf("%d, ", it); printf("\n");
-        printf("min obj: %.1f\n", min);
-    }
+//     if(print)
+//     {
+//         printf("optimal seq:");
+//         for(auto it: min_seq) printf("%d, ", it); printf("\n");
+//         printf("min obj: %.1f\n", min);
+//     }
 
-    return make_pair(min_seq, min);
-}
+//     return make_pair(min_seq, min);
+// }
 
 
 pair<list<int>, double> SetAndTestSchedule::localSearch(Vb prec, Vb child, Vd s, Vd t, bool print)
@@ -1072,7 +1073,22 @@ pair<list<int>, double> SetAndTestSchedule::localSearch(Vb prec, Vb child, Vd s,
     return make_pair(Uheap::vecToList(min_seq), min);
 }
 
+double SetAndTestSchedule::computeWithSetSeq(Vi seq, Vb prec, Vb child, Vd s, Vd t)
+{
+    //init
+    this->s = s;
+    this->t = t;
+    this->prec = prec;
+    this->child = child;
 
+    Uheap hp = toUheap(seq, prec, child, s, t);                
+    list<int> v = {16, 8, 20, 2, 28, 26, 5, 1, 11, 27, 53, 15, 7, 21, 25, 3, 12, 41, 30, 29, 56, 23, 34, 19, 35, 6, 47, 18, 38, 58, 17, 55, 24, 60, 57, 14, 40, 44, 50, 13, 59, 42, 4, 37, 9, 52, 43, 22, 51, 46, 54, 31, 36, 45, 10, 33, 32, 48, 49, 39};
+    for (auto it: v)
+        cout << it << ", " ; cout << endl << endl;
+    double ans = computeSeq(v);
+    cout << ans << endl;
+    return ans;
+}
 
 
 int main()
@@ -1115,9 +1131,14 @@ int main()
     }
 
 
-    st.debug = true; 
-    pair<list<int>, double> pp = st.BFSCBBGuSolve(prec, child, s, t, true);
+    // st.debug = true; 
+    pair<list<int>, double> pp = st.BFSBBsolve(prec, child, s, t, true);    
+    // pair<list<int>, double> pp = st.BFSCBBGuSolve(prec, child, s, t, true);
     // pair<list<int>, double> pp = st.localSearch(prec, child, s, t, true);
-    for(auto it : pp.first) printf("%d, ", it); printf("\n");
+    // for(auto it : pp.first) printf("%d, ", it); printf("\n");
+    
+    
+    // Vi seq = {16, 8, 20, 2, 28, 26, 5, 1, 11, 27, 15, 7, 21, 25, 3, 12, 30, 29, 23, 19, 6, 18, 17, 24, 14, 13, 4, 9, 22, 10};
+    // cout << st.computeWithSetSeq(seq, prec, child, s, t) << endl;
 
 }

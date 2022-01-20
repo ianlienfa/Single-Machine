@@ -50,13 +50,6 @@ typedef vector<Vi> VVi;
 typedef bitset<100> B;
 typedef vector<B> Vb;
 
-// VVi D;
-
-// // working time of test jobs , requirement jobs
-// Vi P = {0, 21, 22, 14, 5, 19, 24, 13, 10, 30, 9, 8, 18, 7, 9, 26, 7, 20, 25, 29, 13, 4, 4, 17, 20, 15, 14, 11, 18, 6, 9, 5, 3, 12, 18, 5, 28, 8, 1, 20, 27, 6, 18, 25, 24, 8, 1, 27, 20, 13, 4, 22, 27, 14, 17, 9, 5, 13, 6, 16, 18};
-// int R = 30;      // number of requirement jobs
-// int J = 30;      // number of test jobs
-// int N = R + J;   // total number of jobs
 const int M = 1;
 
 // Big Constant
@@ -66,64 +59,6 @@ const int My = 100000;
 // hyper param
 // 解放的constraint不連續，難relax
 const int lambda = 50;
-
-
-// VVi toDependecyMatrix(string s)
-// {
-//     VVi dep_matrix;
-//     ifstream input;
-//     input.open(s);
-//     string str;
-//     bool vec_init = true;
-//     while(std::getline(input, str))
-//     {        
-//         bool i;
-//         int set_up_job_idx = 0;        
-//         if(vec_init)
-//         {
-//             stringstream ss(str);            
-//             while(ss >> i)
-//             {                
-//                 Vi v;
-//                 v.push_back(i);
-//                 dep_matrix.push_back(v);
-//             }
-//             vec_init = false;
-//         }
-//         else
-//         {
-//             stringstream ss(str);
-//             while(ss >> i)
-//             {
-//                 dep_matrix[set_up_job_idx].push_back(i);
-//                 set_up_job_idx++;
-//             }
-//         }
-        
-//     }
-//     input.close();
-
-//     // printf("size: %d * %d\n", dep_matrix.size(), dep_matrix[1].size());
-//     // for(auto it: dep_matrix)
-//     // {
-//     //     for(auto itt: it)
-//     //     {
-//     //         cout << itt << " ";
-//     //     }
-//     //     cout << endl;
-//     // }
-
-//     VVi matrix;    
-//     matrix.assign(dep_matrix.size()+dep_matrix[0].size() + 1, Vi(dep_matrix.size()+dep_matrix[0].size() + 1));
-//     for(int i = 1; i <= 30; i++)
-//     {
-//         for(int j = 31; j <= 60; j++)
-//         {
-//             matrix[i][j] = dep_matrix[i-1][j-31];
-//         }
-//     }
-//     return matrix;
-// }
 
 
 // 用child在改的時候比較有效率，因為我們固定的是set-up jobs
@@ -151,13 +86,13 @@ int relax_lb(const Vb &_child, const Vd &_s, const Vd &_t, const Vi &setup_done)
 
     // Create an environment
     GRBEnv env = GRBEnv(true);
-    env.set(GRB_IntParam_OutputFlag, 0);
+    // env.set(GRB_IntParam_OutputFlag, 0);
     env.set("LogFile", "mip1.log");
     env.start();
     
     // Create an empty model
     GRBModel model = GRBModel(env);
-    model.set("SolutionLimit", "1");
+    // model.set("SolutionLimit", "1");
 
     /*  ================ Variable Population =============
         // S: start time, C_p: completion time
@@ -353,6 +288,14 @@ int relax_lb(const Vb &_child, const Vd &_s, const Vd &_t, const Vi &setup_done)
 
     // Optimize model
     model.optimize();    
+    
+    auto it = model.getVars();
+    for(int i = 0; i < model.get(GRB_IntAttr_NumVars); i++)
+    {
+        cout << it[i].get(GRB_StringAttr_VarName) << ":" << it[i].get(GRB_DoubleAttr_X) << endl;
+    }
+
+
     return model.get(GRB_DoubleAttr_ObjBound);
 
     } catch(GRBException e) {

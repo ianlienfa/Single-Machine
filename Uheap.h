@@ -35,14 +35,19 @@ struct UsetNode
 {
     list<int> vi;
     int parent;
-    int pos;
-    bool connect;
+    int pos;      /* the corresponding index in the heap */
+    bool connect; /* true if this set node is merged */
 };
 
 struct Uheap
 {
+    /* heap */
     vector<HpNode> arr;
+    
+    /* union set */
     vector<UsetNode> st;
+    
+    /* input */
     vector<NodeInfo> info;
     int hpsize;
     bool debug = false;
@@ -78,90 +83,21 @@ struct Uheap
     }
 
     // find seq
-    list<int> find_seq()
-    {
-        //
-        if(debug)
-        {
-            for(int i = 0; i < info.size(); i++)
-            {
-                printf("[ %.0f, %.0f, %d], ", info[i].w, info[i].p, info[i].p_init);
-            }
-            printf("\n");
-        }
-
-        if(debug)
-        {
-            printf("st size: %d, hp size: %d\n", st.size(), hpsize);
-        }
-
-        int ct = 0;
-        int last_nd_p;
-        while(hpsize > 0)
-        {
-            if(hpsize == 1)
-                last_nd_p = find_parent(arr[1].idx);
-            double maxq = extract_max();
-            if(debug)printf("round %d: maxq = %.2f\n\n", ct++, maxq);
-            if(debug){
-                // printst
-                for(int i = 0; i < st.size(); i++)
-                {
-                    printf("[ vi: (");
-                    for(auto it: st[i].vi)
-                    {
-                        printf("%d, ", it);
-                    }
-                    printf(")");
-                    printf(", parent: %d" , st[i].parent);
-                    printf(", connect: %d" , st[i].connect);
-                    printf(", pos: %d" , st[i].pos);
-                    printf(" ]\n");
-                }
-            }
-        }
-
-        // 2 ways to find the last node
-
-        // method 1: find for the node with connect = 0
-        if(debug)
-        {
-            for (int i = 1; i < st.size(); i++) {
-                if (!st[i].connect) {
-                    printf("i is %d\n", i);
-                    for (auto it: st[i].vi)
-                        printf("%d, ", it);
-                }
-                printf("\n");
-            }
-
-            // method 2: the last node
-            printf("method2 print:");
-            for (auto it: st[last_nd_p].vi)
-                printf("%d, ", it);
-            printf("\n");
-            if (debug) printf("last_nd_p: %d\n", last_nd_p);
-        }
-        return st[last_nd_p].vi;
-    }
+    list<int> find_seq();    
 };
-
-
-
 
 
 Uheap::Uheap(vector<NodeInfo> in) // info should be 1-based
 {
-    // initialize set, heap
-    // there should be a dummy job infront of info, 除了idx 0是不能用的, idx 1 留給 w = -infinite, parent 為自己, pi = 0的job
+    /* initialize set, heap
+     * there should be a dummy job in front of info, 除了idx 0是不能用的, 
+     * idx 1 留給 w = -infinite, parent 為自己, pi = 0的job
+     */
     vector<NodeInfo> info = in;
     if(info.size() >= 1)
     {
         info[0] = (NodeInfo());
-//        info[1].w = -1.0e+20;
-//        info[1].p_init = 1;
     }
-    else{printf("info size error!\n");}
     arr.assign(info.size(), HpNode());
     st.assign(info.size(), UsetNode());
     hpsize = info.size()-1;
@@ -193,9 +129,6 @@ void Uheap::heap_node_swap(int i, int j)
     // swap pos->heap index
     SWAP(st[stnode_a].pos, st[stnode_b].pos, temp);
 
-//    // swap heap->pos index
-//    SWAP(arr[i].idx, arr[j].idx, temp);
-
     // swap heap element
     SWAP(arr[i], arr[j], tempnode);
 }
@@ -205,7 +138,7 @@ void Uheap::max_heapify(int i)
     int l = i * 2;
     int r = i * 2 + 1;
     int largest;
-    if(l <= hpsize && arr[l].q >  arr[i].q)
+    if(l <= hpsize && arr[l].q > arr[i].q)
         largest = l;
     else
         largest = i;
@@ -221,7 +154,6 @@ double Uheap::extract_max()
 {
     if(hpsize < 1)
         cout << "extract_max: heap_size error." << endl;
-    // debug
     if(debug)
     {
     for (auto it: arr)
@@ -260,6 +192,7 @@ void Uheap::merge(int i)
             printf("%d ", it);
         printf("\n");
     }
+
     st[pt].vi.splice(st[pt].vi.end(), st[i].vi);    // concatenate two lists
     st[i].connect = true;
     st[i].pos = pt;
@@ -303,6 +236,72 @@ void Uheap::upfloat(int i)
     {
         heap_node_swap(i, p);
     }
+}
+
+list<int> Uheap::find_seq()
+{
+    if(debug)
+    {
+        for(int i = 0; i < info.size(); i++)
+        {
+            printf("[ %.0f, %.0f, %d], ", info[i].w, info[i].p, info[i].p_init);
+        }
+        printf("\n");
+    }
+
+    if(debug)
+    {
+        printf("st size: %d, hp size: %d\n", st.size(), hpsize);
+    }
+
+    int ct = 0;
+    int last_nd_p;
+    while(hpsize > 0)
+    {
+        if(hpsize == 1)
+            last_nd_p = find_parent(arr[1].idx);
+        double maxq = extract_max();
+        if(debug)printf("round %d: maxq = %.2f\n\n", ct++, maxq);
+        if(debug){
+            // printst
+            for(int i = 0; i < st.size(); i++)
+            {
+                printf("[ vi: (");
+                for(auto it: st[i].vi)
+                {
+                    printf("%d, ", it);
+                }
+                printf(")");
+                printf(", parent: %d" , st[i].parent);
+                printf(", connect: %d" , st[i].connect);
+                printf(", pos: %d" , st[i].pos);
+                printf(" ]\n");
+            }
+        }
+    }
+
+    // 2 ways to find the last node
+
+    // method 1: find for the node with connect = 0
+    if(debug)
+    {
+        for (int i = 1; i < st.size(); i++) {
+            if (!st[i].connect) {
+                printf("i is %d\n", i);
+                for (auto it: st[i].vi)
+                    printf("%d, ", it);
+            }
+            printf("\n");
+        }
+
+        // method 2: the last node
+        printf("method2 print:");
+        for (auto it: st[last_nd_p].vi)
+            printf("%d, ", it);
+        printf("\n");
+        if (debug) printf("last_nd_p: %d\n", last_nd_p);
+    }
+    return st[last_nd_p].vi;
 }
 
 #endif //TP_UHEAP_H

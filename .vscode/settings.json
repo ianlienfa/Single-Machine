@@ -9,6 +9,9 @@
         "unordered_map": "c",
         "list": "c",
         "setandtestschedule.h": "c",
-        "new": "cpp"
+        "new": "cpp",
+        "vector": "cpp",
+        "__tree": "cpp",
+        "map": "cpp"
     }
 }
