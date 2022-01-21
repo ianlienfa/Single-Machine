@@ -8,14 +8,15 @@ INC =
 # all: seq_relax_c++ permSet_outtree seq_lagRelax_c++ seq_c++
 all: permSet_outtree
 
-clean: 
-	rm *_c++ permSet_outtree
-
 %_c++: %_c++.cpp
 	$(CPP) $(CARGS) -o $@ $< -I$(INC) $(CPPLIB) -lm
 
 permSet_outtree: permSet_outtree.cpp
 	$(CPP) $(CARGS) -o $@ $< -I$(INC) $(CPPLIB) -lm
+
+.PHONY: clean
+clean: 
+	rm *_c++ permSet_outtree
 
 .PHONY: run
 run:

@@ -182,8 +182,9 @@ pair<list<int>, double> SetAndTestSchedule::BFSsolve(Vb prec, Vb child, Vd s, Vd
                     if(debug) printf("ans: %.2f, min: %.2f\n", ans, min);
                     min = ans;
                     min_seq = v;
-                    for(auto it: min_seq) printf("%d, ", it); printf("\n");
                     printf("now min: %.1f\n", min);
+                    for(auto it: min_seq)
+                    cout << it << ", " ; cout << endl << endl;
                 }
             }
 
@@ -219,7 +220,8 @@ void SetAndTestSchedule::DFS(double &min, list<int> &min_seq, B visited, Vi seq,
             min = ans;
             min_seq = v;
             printf("now min: %.1f\n", min);
-            printf("seq: "); for(auto it: min_seq) printf("%d, ", it); printf("\n");
+            for(auto it: min_seq)
+            cout << it << ", " ; cout << endl << endl;        
         }
         return;
     }
@@ -1091,7 +1093,7 @@ double SetAndTestSchedule::computeWithSetSeq(Vi seq, Vb prec, Vb child, Vd s, Vd
 }
 
 
-int main()
+int main(int argc, char* argv[])
 {
     // all 1-based, init and ref
     int tmp, Sn, Tn;;
@@ -1132,9 +1134,29 @@ int main()
 
 
     // st.debug = true; 
-    pair<list<int>, double> pp = st.BFSBBsolve(prec, child, s, t, true);    
+    if(argc >= 2)
+    {
+        string algorithm = string(argv[1]);
+        if(algorithm == "BFSCBB")
+        {
+            cerr << "using algorithm BFSCBBsolve" << endl;
+            pair<list<int>, double> pp = st.BFSCBBsolve(prec, child, s, t, true);    
+        }
+        else if(algorithm == "localSearch")
+        {
+            cerr << "using algorithm localSearch" << endl;
+            pair<list<int>, double> pp = st.localSearch(prec, child, s, t, true);
+        }
+        else if(algorithm == "DFS")
+        {
+            cerr << "using algorithm DFS" << endl;
+            pair<list<int>, double> pp = st.DFSsolve(prec, child, s, t, true);
+
+        }
+    }
+    // pair<list<int>, double> pp = st.BFSsolve(prec, child, s, t, true);    
+    cout << "finish!" << endl;
     // pair<list<int>, double> pp = st.BFSCBBGuSolve(prec, child, s, t, true);
-    // pair<list<int>, double> pp = st.localSearch(prec, child, s, t, true);
     // for(auto it : pp.first) printf("%d, ", it); printf("\n");
     
     
