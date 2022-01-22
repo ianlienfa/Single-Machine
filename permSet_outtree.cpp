@@ -207,8 +207,10 @@ pair<list<int>, double> SetAndTestSchedule::BFSsolve(Vb prec, Vb child, Vd s, Vd
 }
 
 
+double node_ct_DFS = 0;
 void SetAndTestSchedule::DFS(double &min, list<int> &min_seq, B visited, Vi seq, int lv)
 {
+    node_ct_DFS++;
     if(lv == Sn)
     {
         Uheap hp = toUheap(seq, prec, child, s, t);
@@ -219,7 +221,7 @@ void SetAndTestSchedule::DFS(double &min, list<int> &min_seq, B visited, Vi seq,
             if(debug) printf("ans: %.2f, min: %.2f\n", ans, min);
             min = ans;
             min_seq = v;
-            printf("now min: %.1f\n", min);
+            printf("now min: %.1f, node_ct: %f\n", min, node_ct_DFS);
             for(auto it: min_seq)
             cout << it << ", " ; cout << endl << endl;        
         }
@@ -256,6 +258,7 @@ pair<list<int>, double> SetAndTestSchedule::DFSsolve(Vb prec, Vb child, Vd s, Vd
 // BST, not halting
 pair<list<int>, double> SetAndTestSchedule::solve(Vb prec, Vb child, Vd s, Vd t, bool print)
 {
+    double node_ct = 0;
 //init
     this->s = s;
     this->t = t;
@@ -293,8 +296,11 @@ pair<list<int>, double> SetAndTestSchedule::solve(Vb prec, Vb child, Vd s, Vd t,
                     if(debug) printf("ans: %.2f, min: %.2f\n", ans, min);
                     min = ans;
                     min_seq = v;
-                    printf("now min: %.1f\n", min);
-                }
+                    printf("now min: %.1f, node_ct: %f\n", min, node_ct);
+                    for(auto it: min_seq)
+                    cout << it << ", " ; cout << endl << endl;
+
+                }       
             }
 
 // branch
@@ -309,6 +315,7 @@ pair<list<int>, double> SetAndTestSchedule::solve(Vb prec, Vb child, Vd s, Vd t,
                 }
             }
             q.pop_back();
+            node_ct++;
         }
         sz = next_sz;
         lv++;
@@ -369,7 +376,7 @@ pair<list<int>, double> SetAndTestSchedule::BFSBBsolve(Vb prec, Vb child, Vd s, 
                 if(debug) printf("ans: %.2f, min: %.2f\n", ans, min);
                 min = ans;
                 min_seq = v;
-                printf("now min: %.1f\n", min);
+                printf("now min: %.1f", min);
             }
             continue;
         }
@@ -840,10 +847,9 @@ pair<list<int>, double> SetAndTestSchedule::BFSCBBsolve(Vb prec, Vb child, Vd s,
                         if(debug) printf("ans: %.2f, min: %.2f\n", ans, min);
                         min = ans;
                         min_seq = v;
-                        printf("now min: %.1f\n", min);
+                        printf("now min: %.1f, node_ct: %f\n", min, node_ct);
                         for(auto it: min_seq)
                         cout << it << ", " ; cout << endl << endl;
-                        cout << "node_ct: " << node_ct << endl;
                     }
                     continue;
                 }
@@ -1020,6 +1026,8 @@ pair<list<int>, double> SetAndTestSchedule::BFSCBBsolve(Vb prec, Vb child, Vd s,
 
 pair<list<int>, double> SetAndTestSchedule::localSearch(Vb prec, Vb child, Vd s, Vd t, bool print)
 {
+
+    double node_ct = 0;
     //init
     this->s = s;
     this->t = t;
@@ -1041,6 +1049,7 @@ pair<list<int>, double> SetAndTestSchedule::localSearch(Vb prec, Vb child, Vd s,
         {
             for(int j = i+1; j < Sn; j++)
             {   
+                node_ct++;
                 Vi tmp_seq(min_seq);   
                 SWAP(tmp_seq[i], tmp_seq[j]);
                 Uheap hp = toUheap(tmp_seq, prec, child, s, t);                
@@ -1051,7 +1060,7 @@ pair<list<int>, double> SetAndTestSchedule::localSearch(Vb prec, Vb child, Vd s,
                     if(debug) printf("ans: %.2f, min: %.2f\n", ans, min);
                     min = ans;
                     SWAP(min_seq[i], min_seq[j]);
-                    printf("now min: %.1f\n", min);
+                    printf("now min: %.1f, node_ct: %f\n", min, node_ct);
                     for(auto it: min_seq)
                     cout << it << ", " ; cout << endl << endl;
                 }
@@ -1149,11 +1158,7 @@ int main(int argc, char* argv[])
             cerr << "using algorithm BFS" << endl;
             pair<list<int>, double> pp = st.solve(prec, child, s, t, true);
         }
-        else if(algorithm == "BFSBB")
-        {
-            cerr << "using algorithm BFSBB" << endl;
-            pair<list<int>, double> pp = st.BFSBBsolve(prec, child, s, t, true);
-        }
+        
     }
     // pair<list<int>, double> pp = st.BFSsolve(prec, child, s, t, true);    
     cout << "finish!" << endl;
